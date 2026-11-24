@@ -1,0 +1,1465 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Portafolio UGC de Valentina Gómez Rave, comunicadora social y periodista en Bogotá.">
+<title>Valentina Gómez Rave</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<script>(function(){ var d = "dark"; try { var s = localStorage.getItem("vgr-look"); if (s === "light" || s === "dark") d = s; } catch(e){} document.documentElement.dataset.look = d; })();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap">
+<style>
+/* Layout: editorial con capas — intro túnel, hero con mockups 3D, "sobre mí" asimétrico, método con teléfono fijo que cambia por paso, carrusel de marcas, proyecto con pista de videos movida por scroll */
+:root{
+  color-scheme:dark;
+  --bg:#150C11; --bg-2:#1C1117; --surface:rgba(255,255,255,.045); --surface-2:rgba(255,255,255,.085);
+  --ink:#FBF1F4; --ink-2:#C4ADB8; --line:rgba(251,241,244,.12);
+  --rose:#F2A3C2; --btn:#F2A3C2; --on-btn:#1A0D14; --gold:#E8C29C;
+  --glow-a:rgba(224,68,127,.30); --glow-b:rgba(232,194,156,.18); --ghost:rgba(242,163,194,.06);
+  --nav-bg:rgba(28,17,23,.72); --nav-glass:rgba(30,18,25,.38); --top-tint:rgba(146,46,92,.34); --card-ink:#FBF1F4; --card-ink-2:rgba(251,241,244,.72); --card-chip:rgba(255,255,255,.1);
+  --contact-bg:linear-gradient(140deg,#2E1823 0%,#43222F 100%); --contact-ink:#FBF1F4; --contact-accent:#F2A3C2;
+  --s1:linear-gradient(140deg,#ECE4FA 0%,#D9CCF3 100%); --s2:linear-gradient(140deg,#FBE4EE 0%,#F3CCDE 100%);
+  --s3:linear-gradient(140deg,#E3EDFB 0%,#CBDDF5 100%); --s4:linear-gradient(140deg,#EAE6FB 0%,#D6D1F3 100%);
+  --s5:linear-gradient(140deg,#FCE6EC 0%,#F5CFDB 100%);
+  --s6:linear-gradient(140deg,#E2EEFC 0%,#CFE0F6 100%); --s7:linear-gradient(140deg,#F4E4F8 0%,#E6CDEF 100%);
+  --shadow-lg:0 50px 90px -30px rgba(0,0,0,.7), 0 20px 40px -20px rgba(0,0,0,.55);
+  --shadow-md:0 26px 50px -22px rgba(0,0,0,.65);
+  --grain:.07; --phone:#0D080B;
+  --f:"Plus Jakarta Sans", system-ui, "Segoe UI", sans-serif;
+  --f-script:"Allura", "Snell Roundhand", "Segoe Script", cursive;
+}
+:root[data-look="light"]{
+  color-scheme:light;
+  --bg:#FFFFFF; --bg-2:#F7EFEB; --surface:#FFFFFF; --surface-2:#F4ECE9;
+  --ink:#2A1720; --ink-2:#715D66; --line:rgba(42,23,32,.13);
+  --rose:#C2416F; --btn:#2A1720; --on-btn:#FFFFFF; --gold:#A2724A;
+  --glow-a:rgba(242,163,194,.5); --glow-b:rgba(232,194,156,.38); --ghost:rgba(194,65,111,.06);
+  --nav-bg:rgba(255,255,255,.78); --nav-glass:rgba(255,255,255,.42); --top-tint:rgba(242,163,194,.32); --card-ink:#2A1720; --card-ink-2:#6E5A63; --card-chip:rgba(255,255,255,.7);
+  --contact-bg:linear-gradient(140deg,#2A1720 0%,#40222F 100%); --contact-ink:#FBF1F4; --contact-accent:#F2A3C2;
+  --s1:linear-gradient(140deg,#ECE4FA 0%,#D9CCF3 100%); --s2:linear-gradient(140deg,#FBE4EE 0%,#F3CCDE 100%);
+  --s3:linear-gradient(140deg,#E3EDFB 0%,#CBDDF5 100%); --s4:linear-gradient(140deg,#EAE6FB 0%,#D6D1F3 100%);
+  --s5:linear-gradient(140deg,#FCE6EC 0%,#F5CFDB 100%);
+  --s6:linear-gradient(140deg,#E2EEFC 0%,#CFE0F6 100%); --s7:linear-gradient(140deg,#F4E4F8 0%,#E6CDEF 100%);
+  --shadow-lg:0 50px 90px -34px rgba(70,30,45,.35), 0 20px 40px -24px rgba(70,30,45,.25);
+  --shadow-md:0 24px 46px -24px rgba(70,30,45,.3);
+  --grain:.045;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:17px;line-height:1.65;overflow-x:clip}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:var(--grain);mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+a{color:inherit}
+img,video{display:block}
+[hidden]{display:none !important}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+.eyebrow{font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.script{font-family:var(--f-script);font-weight:400;font-style:normal;color:var(--rose);font-size:1.32em;line-height:.6;padding:0 .04em}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:6px}
+.glow{position:absolute;border-radius:50%;pointer-events:none;will-change:transform}
+
+/* ---------- Teléfono ---------- */
+.phone{position:relative;aspect-ratio:9/19;border-radius:15%/7%;background:var(--phone);box-shadow:var(--shadow-lg), inset 0 0 0 1.5px rgba(255,255,255,.14)}
+.phone .scr{position:absolute;inset:1.6% 3.6%;border-radius:12.5%/6%;overflow:hidden;background:#2a1a22}
+.phone .scr img,.phone .scr video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.phone .scr::before{content:"";position:absolute;top:2.2%;left:50%;transform:translateX(-50%);width:32%;height:3.6%;border-radius:99px;background:var(--phone);z-index:3}
+.phone .shade{position:absolute;inset:auto 0 0 0;height:40%;background:linear-gradient(transparent,rgba(0,0,0,.6));z-index:1;pointer-events:none}
+.phone .cap{position:absolute;left:9%;right:9%;bottom:6%;z-index:2;color:#fff;font-weight:700;font-size:clamp(.58rem,1vw,.8rem);line-height:1.25}
+.phone .cap small{display:block;font-weight:500;opacity:.8;font-size:.85em}
+
+/* ---------- Intro ---------- */
+#intro{position:fixed;inset:0;z-index:80;background:radial-gradient(circle at 50% 50%, var(--bg-2) 0%, var(--bg) 70%);perspective:900px;overflow:hidden;transition:opacity .8s ease}
+#intro.done{opacity:0;pointer-events:none}
+body.intro-on::after{display:none}
+#intro .fly{backface-visibility:hidden}
+#intro .stage{position:absolute;inset:0;transform-style:preserve-3d}
+#intro .fly{position:absolute;left:50%;top:50%;width:clamp(96px,11vw,140px);will-change:transform,opacity}
+#intro .name{position:absolute;inset:0;z-index:5;display:grid;place-items:center;text-align:center;pointer-events:none;opacity:0;transform:scale(.94);transition:opacity .6s, transform .8s cubic-bezier(.2,.8,.2,1)}
+#intro .name b{display:block;font-weight:800;font-size:clamp(2.6rem,8vw,6rem);line-height:1;letter-spacing:-.03em}
+#intro .name .script{font-size:clamp(3.4rem,10vw,7.5rem);line-height:1}
+#intro.show .name{opacity:1;transform:none}
+#intro .stage{transition:opacity .45s ease}
+#intro.show .stage{opacity:0}
+#skip{position:absolute;z-index:6;top:calc(18px + env(safe-area-inset-top,0px));right:max(18px, env(safe-area-inset-right,0px));background:var(--surface-2);backdrop-filter:blur(8px);border:1px solid var(--line);color:var(--ink);font:700 .72rem var(--f);letter-spacing:.14em;text-transform:uppercase;padding:10px 16px;border-radius:999px;cursor:pointer}
+
+/* ---------- Nav ---------- */
+.nav{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));left:0;right:0;z-index:40;pointer-events:none}
+.nav .bar{pointer-events:auto;margin:0 auto;width:min(1200px, calc(100% - 2*max(14px, env(safe-area-inset-left,0px))));display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 7px 7px 20px;border-radius:999px;background:var(--nav-bg);backdrop-filter:blur(18px) saturate(1.3);border:1px solid var(--line)}
+.logo{font-family:var(--f-script);font-size:1.9rem;line-height:1;text-decoration:none;color:var(--rose);white-space:nowrap}
+.nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+.nav a.lk{display:block;text-decoration:none;font-weight:600;font-size:.88rem;padding:9px 14px;border-radius:999px;color:var(--ink-2);white-space:nowrap}
+.nav a.lk:hover{color:var(--ink);background:var(--surface-2)}
+.nav a.lk.cta{background:var(--btn);color:var(--on-btn);font-weight:700}
+@media (max-width:760px){.nav li.opt{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;padding-block:160px 110px}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px;align-items:center}
+.hero h1{font-weight:800;font-size:clamp(2.8rem,6.8vw,6rem);line-height:1.02;letter-spacing:-.04em;margin:18px 0 26px;text-wrap:balance}
+.hero h1 .script{font-size:1.45em;display:inline-block;transform:translateY(.08em);line-height:.7}
+.roles{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.86rem;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.pill.on{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:700}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--rose);display:inline-block}
+.hero p.lead{font-size:1.16rem;color:var(--ink-2);max-width:33ch;margin:0 0 34px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:1rem;padding:16px 26px;border-radius:999px;background:var(--btn);color:var(--on-btn);box-shadow:var(--shadow-md);transition:transform .25s}
+.btn:hover{transform:translateY(-3px)}
+.btn.line{background:transparent;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.stage3d{position:relative;height:clamp(460px,48vw,640px);perspective:1400px}
+.cluster{position:absolute;inset:0;transform-style:preserve-3d;will-change:transform}
+.cluster .phone{position:absolute;width:clamp(140px,15.5vw,215px);will-change:transform}
+.float-card{position:absolute;z-index:5;background:var(--nav-bg);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:20px;padding:12px 18px;box-shadow:var(--shadow-md);will-change:transform}
+.float-card small{display:block;font-weight:600;color:var(--ink-2);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}
+.float-card b{font-size:1.4rem;font-weight:800;line-height:1.15}
+.float-card .script{font-size:2.2rem;line-height:1}
+
+/* ---------- Secciones ---------- */
+section.sec{position:relative;padding-block:120px;overflow-x:clip}
+.sec > .wrap{position:relative;z-index:1}
+h2.title{font-weight:800;font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.05;letter-spacing:-.035em;margin:14px 0 18px;text-wrap:balance}
+h2.title .script{font-size:1.5em;line-height:.6}
+.sub{color:var(--ink-2);font-size:1.1rem;max-width:52ch;margin:0}
+.ghost{position:absolute;left:0;font-family:var(--f-script);font-size:clamp(8rem,26vw,22rem);line-height:.8;color:var(--ghost);white-space:nowrap;pointer-events:none;user-select:none;will-change:transform;z-index:0}
+
+/* ---------- Sobre mí ---------- */
+.about-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end}
+.about-head h2{margin-bottom:0}
+.about-head .lede{font-size:clamp(1.15rem,1.6vw,1.35rem);color:var(--ink-2);margin:0;max-width:44ch;justify-self:end}
+.about-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,7vw,110px);margin-top:80px;align-items:start}
+.portrait{position:relative;max-width:460px;width:100%;justify-self:center;margin-top:20px}
+.portrait .frame{position:relative;border-radius:240px 240px 32px 32px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow-lg);will-change:transform;border:1px solid var(--line)}
+.portrait .frame img{width:100%;height:110%;object-fit:cover;object-position:50% 20%;will-change:transform}
+.portrait .ring{position:absolute;inset:-16px;border-radius:260px 260px 44px 44px;border:1px solid var(--gold);opacity:.4;pointer-events:none;will-change:transform}
+.portrait .badge{position:absolute;z-index:3;border-radius:22px;padding:14px 18px;box-shadow:var(--shadow-md);will-change:transform}
+.portrait .badge.uni{right:-30px;bottom:9%;max-width:240px;background:var(--nav-bg);backdrop-filter:blur(12px);border:1px solid var(--line)}
+.portrait .badge.uni b{display:block;font-weight:800;font-size:1.05rem;line-height:1.25}
+.portrait .badge.uni small{color:var(--ink-2);font-weight:600;font-size:.78rem}
+.portrait .badge.hi{left:-30px;top:12%;background:var(--rose);color:#fff;padding:4px 20px 9px;transform:rotate(-6deg)}
+.portrait .badge.hi span{font-family:var(--f-script);font-size:2.1rem;line-height:1}
+.story{display:grid;gap:56px}
+.story .intro{font-size:clamp(1.35rem,2.2vw,1.85rem);font-weight:700;line-height:1.32;letter-spacing:-.02em;margin:0}
+.story .intro .script{font-size:1.5em}
+.facts-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.facts-list div{padding:18px 18px 18px 0;border-bottom:1px solid var(--line)}
+.facts-list dt{font-weight:700;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.facts-list dd{margin:0;font-weight:600}
+.story-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px}
+.story-cols p{margin:0;color:var(--ink-2)}
+.story-cols p:first-letter{font-family:var(--f-script);font-size:3.4em;float:left;line-height:.8;margin:.08em .08em 0 0;color:var(--rose)}
+.about-band{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) auto;gap:clamp(30px,5vw,70px);align-items:center;margin-top:110px}
+.quote{font-family:var(--f-script);font-size:clamp(2.6rem,5.2vw,4.6rem);line-height:1.05;color:var(--ink);margin:0;will-change:transform}
+.quote small{display:block;font-family:var(--f);font-size:.9rem;color:var(--ink-2);font-weight:600;margin-top:16px;letter-spacing:.02em}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 30px}
+.stat b{display:block;font-weight:800;font-size:clamp(2.2rem,4vw,3.2rem);line-height:1;letter-spacing:-.04em}
+.stat span{color:var(--ink-2);font-size:.92rem;font-weight:500}
+.about-band .phone{width:clamp(150px,14vw,190px);will-change:transform;transform:rotate(5deg)}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:60px}
+.skills span{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:10px 18px;font-weight:600;font-size:.92rem;will-change:transform}
+
+/* ---------- Método (teléfono fijo + pasos) ---------- */
+.method{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(30px,6vw,90px);margin-top:70px}
+.m-stick{position:sticky;top:110px;height:calc(100vh - 140px);display:flex;align-items:center;justify-content:center}
+.m-phone{position:relative;width:min(240px, 54%);margin-top:70px}
+.m-phone .scr video,.m-phone .scr img{transition:opacity .5s}
+.m-phone .tag{position:absolute;left:-12%;bottom:12%;z-index:4;background:var(--nav-bg);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:10px 16px;font-weight:700;box-shadow:var(--shadow-md)}
+.m-phone .tag .script{font-size:2rem;line-height:1;display:block}
+.m-orbit{position:absolute;inset:-12% -22%;border-radius:50%;border:1px dashed var(--line);pointer-events:none;will-change:transform}
+.steps{display:grid}
+.step{min-height:68vh;display:flex;flex-direction:column;justify-content:center;padding-block:40px;opacity:.32;transition:opacity .5s}
+.step.on{opacity:1}
+.step .n{font-family:var(--f-script);font-size:clamp(4.5rem,9vw,8rem);line-height:.8;color:var(--rose)}
+.step h3{font-weight:800;font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em;margin:6px 0 12px;line-height:1}
+.step p{margin:0;color:var(--ink-2);font-size:1.12rem;max-width:40ch}
+.step .ex{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.step .ex span{font-size:.82rem;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--ink-2)}
+.step .mini{display:none}
+.m-dots{display:none}
+
+/* ---------- Carrusel de marcas ---------- */
+.carousel{position:relative;margin-top:50px}
+.track{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:30px calc((100% - min(1060px, 88vw))/2) 50px}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:none;width:min(1060px, 88vw);scroll-snap-align:center;border-radius:44px;position:relative;overflow:hidden;min-height:540px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;text-decoration:none;color:var(--card-ink);box-shadow:var(--shadow-lg);will-change:transform,opacity;border:1px solid var(--line)}
+.slide .txt{padding:56px 0 56px 56px;position:relative;z-index:2}
+.slide .txt h3{font-weight:800;font-size:clamp(2.1rem,4.4vw,3.6rem);line-height:1;letter-spacing:-.04em;margin:12px 0 14px}
+.slide .txt p{color:var(--card-ink-2);font-size:1.04rem;margin:0 0 26px;max-width:34ch}
+.slide .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.slide .meta span{background:var(--card-chip);font-weight:600;font-size:.8rem;padding:7px 13px;border-radius:999px}
+.slide .go{display:inline-flex;gap:10px;align-items:center;background:var(--ink);color:var(--bg);font-weight:700;padding:14px 22px;border-radius:999px}
+.slide .vis{position:relative;height:100%;min-height:540px}
+.slide .vis .phone{position:absolute;width:clamp(120px,15vw,200px);will-change:transform}
+.slide .num{position:absolute;right:30px;top:14px;font-family:var(--f-script);font-size:5.5rem;line-height:1;color:var(--rose);opacity:.45;z-index:1}
+.slide .soon{position:absolute;inset:0;display:grid;place-items:center}
+.slide .soon .scr{display:grid;place-items:center;background:linear-gradient(160deg,#4a2236,#1d1018)}
+.slide .soon .scr span{position:relative;z-index:3;color:#fff;font-family:var(--f-script);font-size:2rem;text-align:center;line-height:1.1}
+.ctrl{display:flex;justify-content:center;align-items:center;gap:14px}
+.ctrl button,.navbtn{width:50px;height:50px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font:700 1.1rem var(--f);color:var(--ink);cursor:pointer;flex:none}
+.ctrl button:hover,.navbtn:hover{background:var(--surface-2)}
+.dots{display:flex;gap:8px}
+.dots i{width:9px;height:9px;border-radius:99px;background:var(--line);transition:width .3s, background .3s}
+.dots i.on{width:28px;background:var(--rose)}
+
+/* ---------- Trayectoria ---------- */
+.timeline{position:relative;margin-top:56px;display:grid;gap:16px}
+.job{display:grid;grid-template-columns:200px minmax(0,1fr) minmax(0,1.3fr);gap:28px;align-items:center;padding:28px 32px;border-radius:28px;border:1px solid var(--line);background:var(--surface);will-change:transform}
+.job .when{font-weight:700;font-size:.8rem;color:var(--gold);letter-spacing:.1em;text-transform:uppercase}
+.job h3{font-weight:800;font-size:1.6rem;margin:0;letter-spacing:-.03em;line-height:1.1}
+.job p{margin:0;color:var(--ink-2)}
+
+/* ---------- Servicios (compacto) ---------- */
+.svc-wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,6vw,90px);align-items:start}
+.svc-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.svc-list li{display:grid;grid-template-columns:70px minmax(0,1fr) minmax(0,1.2fr);gap:18px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line);transition:padding .3s}
+.svc-list li:hover{padding-left:10px}
+.svc-list .k{font-family:var(--f-script);font-size:2rem;line-height:1;color:var(--rose)}
+.svc-list h3{margin:0;font-weight:800;font-size:1.2rem;letter-spacing:-.02em}
+.svc-list p{margin:0;color:var(--ink-2);font-size:.96rem}
+
+/* ---------- Contacto ---------- */
+.contact{margin:40px auto 30px;border-radius:48px;background:var(--contact-bg);color:var(--contact-ink);padding:90px max(28px, 6vw);position:relative;overflow:hidden}
+.contact .eyebrow{position:relative;z-index:2;color:var(--contact-accent)}
+.contact h2{font-weight:800;font-size:clamp(2.3rem,6.6vw,5.6rem);line-height:1;letter-spacing:-.045em;margin:14px 0 32px;max-width:13ch;position:relative;z-index:2}
+.contact h2 .script{color:var(--contact-accent);font-size:1.4em}
+.mailrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;position:relative;z-index:2}
+.mail{font-weight:700;font-size:clamp(.95rem,2.3vw,1.3rem);background:rgba(255,255,255,.1);padding:14px 22px;border-radius:999px;user-select:all;word-break:break-all}
+.copy{border:0;background:var(--contact-accent);color:#1A0D14;font:700 1rem var(--f);padding:15px 24px;border-radius:999px;cursor:pointer}
+footer{padding-block:20px 40px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--ink-2);font-weight:500;font-size:.88rem}
+
+/* ---------- Proyecto ---------- */
+.pnav{position:sticky;top:calc(80px + env(safe-area-inset-top,0px));z-index:30;margin-top:96px}
+.pnav .in{display:flex;align-items:center;gap:10px;background:var(--nav-bg);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:999px;padding:6px}
+.pnav .chips{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.pnav .chips::-webkit-scrollbar{display:none}
+.pnav .chips a{flex:none;text-decoration:none;font-weight:600;font-size:.86rem;padding:9px 14px;border-radius:999px;color:var(--ink-2);white-space:nowrap}
+.pnav .chips a.on{background:var(--ink);color:var(--bg)}
+.pnav .chips a:hover:not(.on){background:var(--surface-2);color:var(--ink)}
+.pnav .navbtn{width:40px;height:40px;font-size:1rem}
+.pnav .jump{border:0;background:none;color:var(--ink-2);font:600 .86rem var(--f);padding:9px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.pnav .jump:hover{background:var(--surface-2);color:var(--ink)}
+.p-hero{position:relative;overflow:hidden;padding-block:60px 70px}
+.p-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;position:relative;z-index:2}
+.p-hero h1{font-weight:800;font-size:clamp(3rem,8.6vw,7rem);line-height:.95;letter-spacing:-.05em;margin:12px 0 28px}
+.facts{display:grid;gap:12px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:18px 22px}
+.fact h4{margin:0 0 4px;font-weight:700;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.fact p{margin:0}
+.fact .todo{color:var(--ink-2);font-style:italic}
+.p-vis{position:relative;height:clamp(420px,46vw,620px)}
+.p-vis .phone{position:absolute;width:clamp(130px,15vw,210px);will-change:transform}
+.sticker{position:absolute;right:2%;bottom:6%;z-index:6;font-family:var(--f-script);font-size:2.5rem;line-height:1;background:var(--rose);color:#fff;padding:6px 24px 12px;border-radius:999px;transform:rotate(-8deg);box-shadow:var(--shadow-md)}
+.vpin{position:relative}
+.vpin .sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.vhead{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:calc(76px + env(safe-area-inset-top,0px))}
+.vhead h2{margin:0;font-size:clamp(1.4rem,2.4vw,2.1rem)}
+.vwin{overflow:visible;min-width:0;width:100%}
+.vpin .sticky > *{min-width:0}
+.vctrl{display:flex;align-items:center;gap:12px}
+.vcount{font-weight:700;font-variant-numeric:tabular-nums;min-width:68px;text-align:center}
+.vrail{display:flex;gap:36px;align-items:flex-start;will-change:transform;padding-block:14px 18px}
+.vcard .cap{font-size:clamp(.78rem,1.1vw,1rem);bottom:5%}
+.vcard{flex:none;width:var(--cw,240px);background:none;border:0;padding:0;color:var(--ink);font:inherit;cursor:pointer;text-align:center;will-change:transform,opacity;transform-origin:center 60%}
+.vcard .phone{width:100%}
+.vcard .play{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px 0 0 -31px;border-radius:50%;background:rgba(255,255,255,.92);z-index:4;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.35);transition:transform .25s}
+.vcard:hover .play{transform:scale(1.08)}
+.vcard.playing .play{opacity:0;transform:scale(.8)}
+.vcard.playing:hover .play{opacity:1}
+.vcard .play::after{content:"";border-left:18px solid #1a0d14;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px}
+.vcard .dur{position:absolute;right:9%;top:6%;z-index:4;background:rgba(0,0,0,.55);color:#fff;font-weight:700;font-size:.72rem;padding:4px 9px;border-radius:99px}
+.vcard h3{font-weight:700;font-size:1.02rem;margin:18px 0 2px;letter-spacing:-.01em;line-height:1.3}
+.vcard .src{display:block;color:var(--ink-2);font-weight:500;font-size:.84rem}
+.vprog{height:3px;background:var(--line);border-radius:3px;overflow:hidden}
+.vprog i{display:block;height:100%;width:0;background:var(--rose)}
+.empty{border:1px solid var(--line);background:var(--surface);border-radius:36px;padding:60px 24px;text-align:center;margin-block:40px}
+.empty b{display:block;font-family:var(--f-script);font-weight:400;font-size:3rem;line-height:1.1;color:var(--rose);margin-bottom:8px}
+.nextp{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border:1px solid var(--line);background:var(--surface);border-radius:36px;padding:28px 34px;text-decoration:none;margin-block:40px 20px}
+.nextp b{font-size:clamp(1.5rem,4vw,2.6rem);font-weight:800;letter-spacing:-.04em}
+
+/* ---------- Selector de versión ---------- */
+.theme{display:flex;gap:2px;padding:3px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line)}
+.theme button{display:inline-flex;align-items:center;gap:6px;border:0;background:none;color:var(--ink-2);font:600 .8rem var(--f);padding:7px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.theme button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.theme .ico{font-size:.9rem;line-height:1}
+
+/* ---------- Menú en la página de proyecto ---------- */
+.nav{transition:transform .4s ease, opacity .3s}
+body.in-project .nav{transform:translateY(-140%);opacity:0;pointer-events:none}
+.pnav{top:calc(12px + env(safe-area-inset-top,0px));margin-top:12px}
+.pnav .plogo{font-size:1.5rem;padding:0 8px 0 12px;flex:none}
+.p-hero{padding-top:70px}
+
+/* ---------- Tarjetas de marca en pastel ---------- */
+.slide{--card-ink:#2A1720;--card-ink-2:#6A5560;--card-chip:rgba(255,255,255,.66);border-color:rgba(255,255,255,.5)}
+.slide .go{background:#2A1720;color:#fff}
+.slide .txt .eyebrow{color:#9B4F6E}
+.slide .num{color:#C2416F;opacity:.55}
+
+/* ---------- La marca en redes (mockup TikTok) ---------- */
+.soc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,6vw,90px);align-items:center}
+.soc-stats{display:flex;flex-wrap:wrap;gap:18px 34px;margin:26px 0 20px}
+.soc-stats .stat b{font-size:clamp(1.7rem,2.6vw,2.4rem)}
+.soc-copy .sub{margin-bottom:28px}
+.tt-wrap{display:grid;place-items:center;will-change:transform}
+.tt-phone{width:min(310px, 78vw);transform:rotate(-3deg)}
+.scr.tt{background:#fff;color:#161823;font-family:var(--f);display:flex;flex-direction:column;align-items:center;padding:13% 5% 0;text-align:center;overflow:hidden}
+.tt-top{display:flex;justify-content:space-between;align-items:center;width:100%;font-size:13px;margin-bottom:12px}
+.tt-top b{font-weight:700;font-size:13px;max-width:70%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.scr.tt img.tt-av{position:static;width:76px;height:76px;flex:none;border-radius:50%;object-fit:cover;border:1px solid #eee}
+.tt-handle{font-weight:700;font-size:14px;margin:8px 0 10px}
+.tt-nums{display:flex;justify-content:center;gap:14px;font-size:10px;color:#6b6b74}
+.tt-nums span{display:flex;flex-direction:column;align-items:center}
+.tt-nums b{color:#161823;font-size:13px}
+.tt-btns{display:flex;gap:6px;margin:12px 0 8px}
+.tt-btns span{font-size:11px;font-weight:700;padding:7px 18px;border-radius:4px}
+.tt-follow{background:#FE2C55;color:#fff}
+.tt-msg{background:#F1F1F2;color:#161823}
+.tt-bio{font-size:10.5px;line-height:1.35;margin:4px 0 2px;color:#161823;padding-inline:4px}
+.tt-link{font-size:10px;font-weight:700;margin:2px 0 6px}
+.tt-tabs{display:flex;width:100%;border-bottom:1px solid #eee;margin-top:6px;flex:none}
+.tt-tabs span{flex:1;font-size:13px;padding:6px 0;color:#aaa}
+.tt-tabs span.on{color:#161823;border-bottom:2px solid #161823}
+.tt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;width:112%;margin-top:2px;flex:none}
+.tt-cell{position:relative;aspect-ratio:3/4;overflow:hidden;background:#ddd}
+.scr.tt .tt-cell img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tt-cell span{position:absolute;left:4px;bottom:3px;color:#fff;font-size:9px;font-weight:700;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+
+/* ---------- Botón de sonido ---------- */
+#snd{position:fixed;z-index:70;right:max(16px, env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--nav-bg);backdrop-filter:blur(14px);color:var(--ink);font:700 .82rem var(--f);padding:11px 16px;border-radius:999px;cursor:pointer;box-shadow:var(--shadow-md)}
+#snd .ico{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--ink);color:var(--bg);font-size:.75rem}
+#snd[aria-pressed="true"] .ico{background:var(--rose);color:#fff}
+
+/* ---------- Menú: vidrio esmerilado sin línea ---------- */
+.nav .bar,.pnav .in{background:var(--nav-glass);backdrop-filter:blur(22px) saturate(1.5);-webkit-backdrop-filter:blur(22px) saturate(1.5);border:0}
+.theme{border:0;background:rgba(255,255,255,.12)}
+:root[data-look="light"] .theme{background:rgba(255,255,255,.55)}
+
+/* ---------- Flechas: chevrón delgado y centrado ---------- */
+.ctrl button,.navbtn,#player .nv{display:inline-grid;place-items:center;padding:0;line-height:0}
+.chev{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;display:block}
+#player .nv .chev{width:20px;height:20px}
+
+/* ---------- Degradado que arranca en el borde superior ---------- */
+.hero{background:linear-gradient(180deg, var(--top-tint) 0%, transparent 85%);margin-top:calc(-1 * env(safe-area-inset-top, 0px));padding-top:calc(160px + env(safe-area-inset-top, 0px))}
+#project{background:linear-gradient(180deg, var(--top-tint) 0px, transparent 620px);background-repeat:no-repeat;margin-top:calc(-1 * env(safe-area-inset-top, 0px));padding-top:calc(12px + env(safe-area-inset-top, 0px))}
+#project .pnav{margin-top:0}
+
+/* ---------- Encabezado de videos y pista ancha ---------- */
+.vhead{align-items:center}
+.vhead h2{line-height:1.15;display:flex;align-items:baseline;flex-wrap:wrap;gap:0 .3em}
+.vhead h2 .script{font-size:1.35em;line-height:1}
+.vctrl{align-self:center}
+.vwin{padding-left:max(20px, calc((100vw - 1400px) / 2 + 20px));padding-right:max(20px, calc((100vw - 1400px) / 2 + 20px))}
+.vrail{padding-top:34px}
+
+/* ---------- Flechas dentro de botones ---------- */
+.chev-i{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none;vertical-align:-.15em}
+.nextp b{display:inline-flex;align-items:center;gap:.3em}
+
+/* ---------- Menú: píldora de vidrio flotante, igual en inicio y proyectos, sin sombra ni línea ---------- */
+body .nav{top:calc(12px + env(safe-area-inset-top, 0px))}
+body .nav .bar,body .pnav .in{border-radius:999px;box-shadow:none !important;border:0;outline:0;background:var(--nav-glass);backdrop-filter:blur(22px) saturate(1.5);-webkit-backdrop-filter:blur(22px) saturate(1.5);background-clip:padding-box;isolation:isolate}
+body .nav .bar{width:min(1200px, calc(100% - 2 * max(14px, env(safe-area-inset-left, 0px))));margin:0 auto;padding:7px 7px 7px 20px}
+body .pnav{position:sticky;top:calc(12px + env(safe-area-inset-top, 0px));width:min(1200px, calc(100% - 2 * max(14px, env(safe-area-inset-left, 0px))));max-width:none;margin:12px auto 0;padding:0;background:none;box-shadow:none}
+body .pnav .in{padding:6px}
+body #project{padding-top:0}
+
+/* ---------- Ícono de play: pequeño, translúcido, solo con hover o al tocar ---------- */
+.vcard .play{width:46px;height:46px;margin:-23px 0 0 -23px;background:rgba(255,255,255,.28);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:none;border:1px solid rgba(255,255,255,.35);opacity:0;transform:scale(.85);transition:opacity .25s ease, transform .25s ease}
+.vcard .play::after{border-left:12px solid rgba(255,255,255,.95);border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
+.vcard.playing .play{opacity:0}
+@media (hover:hover){ .vcard:hover .play,.vcard.playing:hover .play{opacity:1;transform:none} }
+.vcard:active .play,.vcard:focus-visible .play{opacity:1;transform:none}
+
+/* ---------- Post de Instagram ---------- */
+.igpost{position:absolute;width:clamp(150px,17vw,230px);background:#fff;color:#111;border-radius:14px;overflow:hidden;box-shadow:var(--shadow-lg);will-change:transform}
+.igpost .ig-h{display:flex;align-items:center;gap:7px;padding:7px 9px;font:600 11px var(--f)}
+.igpost .ig-h img{width:22px;height:22px;border-radius:50%;object-fit:cover}
+.igpost .ig-h span{margin-left:auto;color:#666}
+.igpost .ig-img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.igpost .ig-a{display:flex;gap:10px;padding:7px 10px 9px;font-size:13px;color:#222}
+.igpost .ig-a .sv{margin-left:auto}
+.slide .vis .igpost{width:clamp(120px,15vw,200px)}
+.p-vis .igpost{width:clamp(130px,15vw,210px)}
+.posts-home{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(30px,6vw,90px);align-items:center}
+.posts-home .btns{margin-top:44px}
+.ph-stack{position:relative;height:clamp(380px,40vw,520px)}
+.ph-item{position:absolute;display:block;will-change:transform}
+.ph-item .igpost{position:relative;width:clamp(160px,17vw,240px)}
+.post-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:40px}
+.post-link{display:block;text-decoration:none;color:var(--ink);will-change:transform}
+.post-link .igpost{position:relative;width:100%}
+.post-cap{display:block;margin-top:14px;font-weight:700}
+.post-cap small{display:block;color:var(--ink-2);font-weight:500;margin-top:2px}
+.soc-grid.two .soc-phones{display:flex;justify-content:center;gap:18px}
+.soc-grid.two .tt-phone{width:min(260px, 42vw)}
+.soc-grid.two .tt-phone:first-child{transform:rotate(-4deg) translateY(10px)}
+.soc-grid.two .tt-phone:last-child{transform:rotate(3deg)}
+.scr.ig .tt-top{justify-content:space-between}
+.ig-head{display:flex;align-items:center;gap:12px;width:100%;margin:2px 0 6px}
+.scr.ig img.tt-av{width:62px;height:62px}
+.ig-nums{display:flex;flex:1;justify-content:space-around;font-size:9.5px;color:#555}
+.ig-nums span{display:flex;flex-direction:column;align-items:center}
+.ig-nums b{color:#111;font-size:12.5px}
+.ig-name{align-self:flex-start;font-size:11px;font-weight:700;margin:2px 0 0}
+.ig-bio{align-self:flex-start;text-align:left;padding:0}
+.ig-btns{width:100%}
+.ig-btns span{flex:1;text-align:center;border-radius:7px}
+.ig-follow{background:#0095F6;color:#fff}
+.ig-grid{width:112%}
+.ig-grid .tt-cell{aspect-ratio:4/5}
+@media (max-width:900px){
+  .posts-home{grid-template-columns:minmax(0,1fr)}
+  .ph-stack{height:360px;max-width:520px;width:100%;margin:0 auto}
+  .post-grid{grid-template-columns:repeat(3,minmax(70%,1fr));overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:10px}
+  .post-grid::-webkit-scrollbar{display:none}
+  .post-link{scroll-snap-align:center}
+}
+@media (max-width:600px){
+  .ph-item .igpost{width:42vw}
+  .soc-grid.two .tt-phone{width:44vw}
+  .slide .vis .igpost{width:34vw}
+  .p-vis .igpost{width:min(38vw,150px)}
+}
+
+/* ---------- Ajustes de celular: orden, tags y espacios ---------- */
+@media (max-width:600px){
+  /* tags en una sola línea */
+  .roles{flex-wrap:nowrap;gap:6px}
+  .roles .pill{font-size:.72rem;padding:7px 10px;gap:6px;white-space:nowrap}
+  .roles .pill i{width:6px;height:6px}
+  /* hero: botones después de los mockups */
+  .hero-grid{display:flex;flex-direction:column;gap:0}
+  .hero-text{display:contents}
+  .hero-text > *{order:1}
+  .hero .stage3d{order:2;margin:6px auto 10px}
+  .hero .btns{order:3}
+  .hero p.lead{margin-bottom:6px}
+  /* menos espacio antes de "Sobre mí" */
+  #sobre-mi{padding-top:46px}
+  /* tarjetas de marca: "Ver proyecto" después de los mockups */
+  .slide{display:flex;flex-direction:column;align-items:stretch}
+  .slide .txt{display:contents}
+  .slide{padding:0 22px}
+  .slide .txt > *{order:1;margin-left:0;margin-right:0}
+  .slide .txt h3{margin:10px 0 12px}
+  .slide .txt p{margin:0 0 18px}
+  .slide .txt .eyebrow{margin-top:30px}
+  .slide .vis{order:2}
+  .slide .go{order:3;align-self:flex-start;margin:0 0 28px}
+  .slide .vis{margin:0 -22px}
+  .track{padding:24px 8vw 40px;gap:14px}
+  .slide{width:84vw}
+  .slide .meta{margin-bottom:0}
+  /* sección de posts: botón después de los posts y menos espacio al final */
+  .posts-home{display:flex;flex-direction:column;gap:0;align-items:stretch;text-align:left}
+  .ph-stack{width:100%;max-width:360px;margin-left:auto !important;margin-right:auto !important}
+  .ph-item:nth-child(1){left:0 !important}
+  .ph-item:nth-child(2){left:27% !important}
+  .ph-item:nth-child(3){left:54% !important}
+  #servicios{padding-bottom:28px}
+  .ph-copy{display:contents}
+  .ph-copy > *{order:1}
+  .ph-stack{order:2;height:300px;margin:10px auto 6px}
+  .posts-home .btns{order:3;margin-top:34px}
+  #posts{padding-bottom:72px}
+  #posts + .band{margin-top:0}
+}
+
+/* ---------- Menú de celular ---------- */
+.burger-li{display:none}
+.burger{display:grid;place-content:center;gap:5px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.12);cursor:pointer;padding:0}
+:root[data-look="light"] .burger{background:rgba(255,255,255,.6)}
+.burger span{display:block;width:16px;height:1.6px;border-radius:2px;background:var(--ink);transition:transform .3s ease}
+.burger[aria-expanded="true"] span:first-child{transform:translateY(3.3px) rotate(45deg)}
+.burger[aria-expanded="true"] span:last-child{transform:translateY(-3.3px) rotate(-45deg)}
+.mmenu{pointer-events:auto;width:min(1200px, calc(100% - 2 * max(14px, env(safe-area-inset-left, 0px))));margin:8px auto 0;padding:10px;border-radius:26px;background:var(--nav-glass);backdrop-filter:blur(22px) saturate(1.5);-webkit-backdrop-filter:blur(22px) saturate(1.5);display:grid;gap:2px;animation:mmIn .25s ease}
+.mmenu a{display:block;text-decoration:none;color:var(--ink);font-weight:700;font-size:1.05rem;padding:13px 16px;border-radius:16px}
+.mmenu a:hover,.mmenu a:focus-visible{background:rgba(255,255,255,.1)}
+.mmenu .mm-cta{background:var(--btn);color:var(--on-btn);text-align:center;margin-top:6px}
+@keyframes mmIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (max-width:760px){ .burger-li{display:block} }
+@media (min-width:761px){ .mmenu{display:none !important} }
+section[id]{scroll-margin-top:84px}
+
+/* ---------- Desplegable de marcas (menú del proyecto) ---------- */
+.bdrop{position:relative;flex:none}
+.bd-btn{display:inline-flex;align-items:center;gap:8px;border:0;background:rgba(255,255,255,.12);color:var(--ink);font:600 .88rem var(--f);padding:9px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+:root[data-look="light"] .bd-btn{background:rgba(255,255,255,.6)}
+.bd-btn .bd-k{color:var(--ink-2);font-weight:500}
+.bd-btn .chev{width:16px;height:16px;transition:transform .25s}
+.bd-btn[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.bd-menu{position:absolute;top:calc(100% + 10px);left:0;min-width:250px;padding:8px;border-radius:22px;background:var(--nav-glass);backdrop-filter:blur(22px) saturate(1.5);-webkit-backdrop-filter:blur(22px) saturate(1.5);display:grid;gap:2px;z-index:50;animation:mmIn .2s ease}
+:root[data-look="dark"] .bd-menu{background:rgba(30,18,25,.85)}
+:root[data-look="light"] .bd-menu{background:rgba(255,255,255,.92)}
+.bd-menu a{display:flex;justify-content:space-between;align-items:baseline;gap:14px;text-decoration:none;color:var(--ink);font-weight:700;font-size:.95rem;padding:10px 14px;border-radius:14px}
+.bd-menu a small{color:var(--ink-2);font-weight:500;font-size:.75rem}
+.bd-menu a:hover,.bd-menu a.on{background:rgba(255,255,255,.12)}
+:root[data-look="light"] .bd-menu a:hover,:root[data-look="light"] .bd-menu a.on{background:var(--bg-2)}
+.bd-menu .bd-home{color:var(--ink-2);font-weight:600;font-size:.85rem}
+.bd-sp{flex:1}
+#servicios{padding-bottom:50px}
+.contact{margin-top:10px}
+
+/* ---------- Celular: hero centrado, menú alineado, fondo continuo ---------- */
+.nav ul,.nav li{display:flex;align-items:center}
+.nav li.burger-li{display:none}
+@media (max-width:760px){ .nav li.burger-li{display:flex} }
+.nav ul{gap:6px}
+.theme{align-items:center}
+.hero{overflow-x:clip;overflow-y:visible}
+@media (max-width:600px){
+  .hero .eyebrow,.hero h1,.hero p.lead{text-align:center;margin-left:auto;margin-right:auto}
+  .hero .roles,.hero .btns{justify-content:center}
+  .nav .bar{padding:6px 6px 6px 16px}
+  .theme button{height:32px}
+  .burger{width:38px;height:38px}
+}
+
+/* ---------- Bandas para separar secciones ---------- */
+.band{background:var(--bg-2);border-radius:56px;margin-inline:max(8px,1.2vw)}
+:root[data-look="light"] .job,:root[data-look="light"] .fact,:root[data-look="light"] .slide,:root[data-look="light"] .float-card,
+:root[data-look="light"] .pnav .in,:root[data-look="light"] .nav .bar,:root[data-look="light"] .nextp,:root[data-look="light"] .portrait .badge.uni{box-shadow:0 18px 40px -26px rgba(70,30,45,.35)}
+:root[data-look="light"] .facts-list,:root[data-look="light"] .svc-list{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:6px 24px}
+:root[data-look="light"] .facts-list div:nth-last-child(-n+2),:root[data-look="light"] .svc-list li:last-child{border-bottom:0}
+:root[data-look="light"] .skills span{background:var(--surface);box-shadow:0 10px 24px -18px rgba(70,30,45,.4)}
+
+/* ---------- Reproductor ---------- */
+#player{position:fixed;inset:0;z-index:90;display:grid;place-items:center;background:rgba(10,5,8,.84);backdrop-filter:blur(14px);padding:calc(20px + env(safe-area-inset-top,0px)) max(16px, env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px));color:#FBF1F4}
+#player .box{display:flex;align-items:center;gap:22px}
+#player .phone{width:min(360px, 78vw, calc((100svh - 160px) * 9 / 19))}
+#player .phone .scr video{object-fit:cover}
+.phone:has(video),.phone[data-vid]{cursor:pointer}
+.slide .vis .phone,.p-vis .phone,.about-band .phone,.cluster .phone,.step .mini .phone{transition:filter .25s}
+.slide .vis .phone:hover,.p-vis .phone:hover,.cluster .phone:hover{filter:brightness(1.06)}
+#player .info{position:absolute;left:0;right:0;bottom:calc(16px + env(safe-area-inset-bottom,0px));text-align:center;padding-inline:20px}
+#player .info b{display:block;font-size:1.02rem}
+#player .info a{color:#F2A3C2;font-weight:600;font-size:.88rem}
+#player .x,#player .nv{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);color:#fff;width:52px;height:52px;border-radius:50%;font:700 1.2rem var(--f);cursor:pointer;flex:none}
+#player .x{position:absolute;top:calc(18px + env(safe-area-inset-top,0px));right:max(18px, env(safe-area-inset-right,0px))}
+
+/* ---------- Tablet / móvil ---------- */
+@media (max-width:980px){
+  .about-head{grid-template-columns:minmax(0,1fr);gap:18px}
+  .about-head .lede{justify-self:start}
+  .about-grid{grid-template-columns:minmax(0,1fr);margin-top:50px}
+  .about-band{grid-template-columns:minmax(0,1fr) auto;margin-top:80px}
+  .about-band .quote{grid-column:1/-1}
+  .method{grid-template-columns:minmax(0,1fr)}
+  .m-stick{display:none}
+  .steps{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:calc(-1 * max(20px, env(safe-area-inset-left, 0px)));padding:10px max(20px, env(safe-area-inset-left, 0px)) 24px}
+  .steps::-webkit-scrollbar{display:none}
+  .step{flex:none;width:min(82vw,380px);min-height:0;opacity:1;scroll-snap-align:center;padding:26px 24px;border:1px solid var(--line);border-radius:30px;background:var(--surface);display:flex;flex-direction:column;align-items:flex-start;will-change:transform}
+  .step .n{font-size:3.6rem}
+  .step h3{font-size:1.8rem}
+  .step p{font-size:1rem}
+  .step .mini{display:block;width:150px;margin:22px auto 0;will-change:transform}
+  .m-dots{display:flex;justify-content:center;gap:8px;margin-top:4px}
+  .m-dots i{width:8px;height:8px;border-radius:99px;background:var(--line);transition:width .3s, background .3s}
+  .m-dots i.on{width:24px;background:var(--rose)}
+  .svc-wrap{grid-template-columns:minmax(0,1fr)}
+  .soc-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:900px){
+  .hero{padding-block:120px 60px}
+  .hero-grid,.p-grid{grid-template-columns:minmax(0,1fr)}
+  .stage3d{height:440px;max-width:460px;width:100%;margin:0 auto}
+  .job{grid-template-columns:minmax(0,1fr);gap:6px}
+  .slide{grid-template-columns:minmax(0,1fr);min-height:0}
+  .slide .txt{padding:36px 26px 0}
+  .slide .vis{min-height:380px}
+  .p-vis{height:420px;max-width:460px;width:100%;margin:0 auto}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section.sec{padding-block:80px}
+  .hero{padding-block:104px 8px}
+  .stage3d{height:340px}
+  .cluster .phone{width:118px}
+  .float-card{padding:9px 13px;border-radius:16px}
+  .float-card b{font-size:1.1rem}
+  .float-card .script{font-size:1.8rem}
+  .portrait{max-width:330px}
+  .portrait .badge.uni{right:0;max-width:200px;padding:12px 14px}
+  .portrait .badge.hi{left:0}
+  .portrait .badge.hi span{font-size:1.7rem}
+  .portrait .ring{inset:-10px}
+  .facts-list,.story-cols{grid-template-columns:minmax(0,1fr)}
+  .story{gap:36px}
+  .about-band{grid-template-columns:minmax(0,1fr)}
+  .about-band .phone{display:none}
+  .stats{gap:22px}
+  .slide{border-radius:32px}
+  .slide .vis{min-height:320px}
+  .slide .vis .phone{width:108px}
+  .slide .num{font-size:4rem;right:20px}
+  .track{gap:16px}
+  .svc-list li{grid-template-columns:50px minmax(0,1fr);gap:6px 14px}
+  .svc-list li p{grid-column:2}
+  .contact{border-radius:30px;padding-block:64px}
+  #snd .tx{display:none}
+  #snd{padding:11px}
+  .tt-phone{width:min(270px, 74vw)}
+  .soc-stats{gap:28px}
+  .pnav .jump,.pnav .navbtn{display:none}
+  .pnav .plogo{font-size:1.15rem;padding:0 4px 0 10px}
+  .nav li.opt2{display:none}
+  .theme .tx{display:none}
+  .theme button{padding:7px 10px}
+  .p-hero{padding-block:28px 30px}
+  .p-grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  .p-text{display:contents}
+  .p-hero .eyebrow{order:1}
+  .p-hero h1{order:2;font-size:clamp(2.6rem,13vw,3.6rem);margin:8px 0 0}
+  .p-vis{order:3;height:370px;max-width:none;margin:30px -6px 10px}
+  .p-vis .phone{width:min(36vw,140px)}
+  .facts{order:4;gap:10px}
+  .fact{padding:14px 16px;border-radius:18px}
+  .fact p{font-size:.95rem;line-height:1.5}
+  .sticker{font-size:1.6rem;right:0;bottom:2%;padding:4px 16px 9px}
+  .vhead{gap:10px;padding-top:calc(78px + env(safe-area-inset-top,0px))}
+  #player .nv{position:absolute;bottom:calc(74px + env(safe-area-inset-bottom,0px))}
+  #player .nv.l{left:24px} #player .nv.r{right:24px}
+  .nav .bar{padding-left:16px}
+  .logo{font-size:1.45rem}
+  .band{border-radius:32px;margin-inline:6px}
+  .nav a.lk{padding:8px 11px;font-size:.84rem}
+}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} .btn,.vcard .play,.step,.svc-list li{transition:none} }
+
+html,body{margin:0}
+img{max-width:100%}
+</style>
+</head>
+<body>
+<div id="intro" aria-hidden="true">
+  <div class="stage" id="stage"></div>
+  <div class="name"><div><b>Valentina</b><span class="script">Gómez Rave</span></div></div>
+  <button id="skip" type="button">Saltar intro</button>
+</div>
+
+<nav class="nav" aria-label="Principal"><div class="bar">
+  <a class="logo" href="#">Valentina Gómez Rave</a>
+  <ul>
+    <li class="opt"><a class="lk" href="#sobre-mi">Sobre mí</a></li>
+    <li class="opt2"><a class="lk" href="#marcas">Marcas</a></li>
+    <li class="opt"><a class="lk" href="#servicios">Servicios</a></li>
+    <li class="opt2"><a class="lk cta" href="#contacto">Contacto</a></li>
+    <li id="navTheme"></li>
+    <li class="burger-li"><button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button></li>
+  </ul>
+</div>
+<div class="mmenu" id="mmenu" hidden>
+  <a href="#sobre-mi">Sobre mí</a>
+  <a href="#metodo">Cómo trabajo</a>
+  <a href="#marcas">Marcas</a>
+  <a href="#posts">Posts</a>
+  <a href="#trayectoria">Trayectoria</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#contacto" class="mm-cta">Contacto</a>
+</div></nav>
+
+<main id="home">
+  <header class="hero" id="top">
+    <div class="glow" data-sy="-0.3" style="width:680px;height:680px;left:-260px;top:160px;background:radial-gradient(circle,var(--glow-a),transparent 65%)"></div>
+    <div class="glow" data-sy="0.2" style="width:580px;height:580px;right:-170px;top:160px;background:radial-gradient(circle,var(--glow-b),transparent 65%)"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow">Portafolio UGC · Bogotá 2026</div>
+        <h1>Contenido que cuenta <span class="script">historias</span></h1>
+        <div class="roles">
+          <span class="pill on">Comunicadora social</span>
+          <span class="pill on">Periodista</span>
+          <span class="pill"><i></i>Creadora UGC</span>
+        </div>
+        <p class="lead">Periodista de formación. Escribo, grabo y pienso cada video para que tu marca se vea real y venda.</p>
+        <div class="btns">
+          <a class="btn" href="#marcas">Ver trabajos <svg class="chev-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6.5 18.5 12 13 17.5"/></svg></a>
+          <a class="btn line" href="#contacto">Hablemos</a>
+        </div>
+      </div>
+      <div class="stage3d">
+        <div class="cluster" id="cluster"></div>
+        <div class="float-card" data-d="1.4" style="left:-2%;top:12%"><small>Formación</small><b>Periodista</b></div>
+        <div class="float-card" data-d="1.8" style="right:0;bottom:8%"><small>Videos creados</small><span class="script" id="vcount">+21</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="sec" id="sobre-mi">
+    <div class="ghost" data-gx="-0.25" style="top:0">Valentina</div>
+    <div class="wrap">
+      <div class="eyebrow">Sobre mí</div>
+      <div class="about-head">
+        <h2 class="title">La periodista detrás de la <span class="script">cámara</span></h2>
+        <p class="lede">Comunicadora social y periodista de la Universidad Externado de Colombia. Vivo en Bogotá y creo contenido para marcas en TikTok e Instagram.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="portrait">
+          <div class="ring" data-sy="-0.04"></div>
+          <div class="frame" data-sy="-0.07"><img id="pimg" src="assets/valentina-retrato.jpg" alt="Retrato de Valentina Gómez Rave"></div>
+          <div class="badge hi" data-sy="-0.22" data-rot="-6"><span>Hola, soy Valen</span></div>
+          <div class="badge uni" data-sy="-0.14"><small>Comunicación Social – Periodismo</small><b>Universidad Externado de Colombia</b><small>2020 – 2025</small></div>
+        </div>
+
+        <div class="story">
+          <p class="intro">Llegué al contenido desde el <span class="script">periodismo</span>: aprendí a investigar antes de escribir, a encontrar el ángulo de una historia y a contarla para que la gente se quede hasta el final.</p>
+          <dl class="facts-list">
+            <div><dt>Base</dt><dd>Bogotá, Colombia</dd></div>
+            <div><dt>Hoy</dt><dd>Creadora en CENT Agency</dd></div>
+            <div><dt>Formación</dt><dd>Comunicación Social – Periodismo</dd></div>
+            <div><dt>Plataformas</dt><dd>TikTok · Instagram · YouTube · LinkedIn</dd></div>
+          </dl>
+          <div class="story-cols">
+            <p>En CENT Agency escribo guiones y copies, planeo la identidad visual del feed y adapto tendencias a la voz de cada marca. Antes gestioné las redes de SkyNet de Colombia y aprendí planeación estratégica en mi práctica en ETB.</p>
+            <p>Soy organizada, proactiva y curiosa. Me gusta proponer ideas, grabar con naturalidad y revisar los números para que el siguiente video funcione mejor que el anterior.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-band">
+        <p class="quote" data-sx="0.06">“Cada marca tiene una historia. Mi trabajo es contarla bien.”<small>Valentina Gómez Rave</small></p>
+        <div class="stats">
+          <div class="stat"><b id="sBrands">5</b><span>marcas con contenido</span></div>
+          <div class="stat"><b id="sVideos">21</b><span>videos en este portafolio</span></div>
+          <div class="stat"><b>3</b><span>empresas en su trayectoria</span></div>
+          <div class="stat"><b>6</b><span>redes que maneja</span></div>
+        </div>
+        <div class="phone" data-sy="-0.18" id="aboutPhone"></div>
+      </div>
+
+      <div class="skills" id="skills">
+        <span data-sy="-0.04">Redacción</span><span data-sy="-0.09">Creatividad</span><span data-sy="-0.05">Liderazgo</span>
+        <span data-sy="-0.11">Comunicación</span><span data-sy="-0.06">Trabajo en equipo</span><span data-sy="-0.1">Resolución de problemas</span>
+        <span data-sy="-0.07">Guiones</span><span data-sy="-0.12">Tendencias</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band" id="metodo">
+    <div class="wrap">
+      <div class="eyebrow">Cómo trabajo</div>
+      <h2 class="title">Del brief al video, con método de <span class="script">periodista</span></h2>
+      <div class="method">
+        <div class="m-stick">
+          <div class="m-orbit" data-spin="1"></div>
+          <div class="m-phone" id="mPhone">
+            <div class="phone"><div class="scr" id="mScr"></div></div>
+            <div class="tag"><small class="eyebrow" id="mBrand">Arte Activo</small><span class="script" id="mStep">investigar</span></div>
+          </div>
+        </div>
+        <div class="steps" id="steps" data-group></div>
+        <div class="m-dots" id="mDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="marcas" style="padding-bottom:70px;padding-top:60px">
+    <div class="ghost" data-gx="0.22" style="top:0">Marcas</div>
+    <div class="wrap">
+      <div class="eyebrow">Marcas</div>
+      <h2 class="title">Cada marca, su propia <span class="script">historia</span></h2>
+      <p class="sub">Desliza y entra a cada proyecto para ver y reproducir todo el contenido creado.</p>
+    </div>
+    <div class="carousel">
+      <div class="track" id="brandTrack"></div>
+      <div class="ctrl"><button type="button" id="prev" aria-label="Marca anterior"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button><div class="dots" id="dots"></div><button type="button" id="next" aria-label="Marca siguiente"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg></button></div>
+    </div>
+  </section>
+
+  <section class="sec" id="posts">
+    <div class="ghost" data-gx="-0.2" style="top:0">Instagram</div>
+    <div class="wrap posts-home">
+      <div class="ph-copy">
+        <div class="eyebrow">Posts para Instagram</div>
+        <h2 class="title">También diseño <span class="script">posts</span> que venden</h2>
+        <p class="sub">Además de video, creo publicaciones para el feed: fotografía de producto, diseño y textos pensados para cada marca. Así se ve el trabajo para YAROS.</p>
+        <div class="btns"><a class="btn" href="#yaros">Ver proyecto YAROS <svg class="chev-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6.5 18.5 12 13 17.5"/></svg></a></div>
+      </div>
+      <div class="ph-stack" id="phStack"></div>
+    </div>
+  </section>
+
+  <section class="sec band" id="trayectoria">
+    <div class="wrap">
+      <div class="eyebrow">Trayectoria</div>
+      <h2 class="title">Donde he contado <span class="script">historias</span></h2>
+      <div class="timeline">
+        <div class="job" data-sx="-0.06"><div class="when">2026 — hoy</div><h3>CENT Agency</h3><p>Contenido para TikTok e Instagram, guiones orgánicos y comerciales, copies e identidad visual del feed.</p></div>
+        <div class="job" data-sx="0.06"><div class="when">2025 — 2026</div><h3>SkyNet de Colombia</h3><p>Gestión integral de redes, parrillas, campañas mensuales y análisis de rendimiento.</p></div>
+        <div class="job" data-sx="-0.06"><div class="when">2024 — 2025</div><h3>ETB</h3><p>Práctica profesional en planeación estratégica de contenido y copies para redes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="servicios" style="padding-top:40px">
+    <div class="wrap svc-wrap">
+      <div>
+        <div class="eyebrow">Servicios</div>
+        <h2 class="title">Lo que puedo hacer por tu <span class="script">marca</span></h2>
+        <p class="sub">Puedo encargarme de una pieza o de todo el proceso, desde la idea hasta la medición.</p>
+      </div>
+      <ul class="svc-list">
+        <li><span class="k">uno</span><h3>Videos UGC</h3><p>Reseñas, unboxing, demos y tendencias grabados con naturalidad.</p></li>
+        <li><span class="k">dos</span><h3>Guiones</h3><p>Contenido orgánico, comercial y de posicionamiento.</p></li>
+        <li><span class="k">tres</span><h3>Copies</h3><p>Textos persuasivos con el tono de tu marca.</p></li>
+        <li><span class="k">cuatro</span><h3>Estrategia y parrillas</h3><p>Planeación, tendencias y estética del feed.</p></li>
+        <li><span class="k">cinco</span><h3>Posts para Instagram</h3><p>Fotografía de producto, diseño y copy para el feed.</p></li>
+        <li><span class="k">seis</span><h3>Medición</h3><p>Reviso qué funcionó y ajusto la siguiente tanda.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="contact" id="contacto">
+      <div class="glow" data-sy="-0.2" style="width:480px;height:480px;right:-140px;top:-140px;background:radial-gradient(circle,rgba(242,163,194,.35),transparent 65%)"></div>
+      <div class="eyebrow">Contacto</div>
+      <h2>Contemos la historia de tu <span class="script">marca</span></h2>
+      <div class="mailrow">
+        <span class="mail" id="mail">valengomezrave12@gmail.com</span>
+        <button class="copy" id="copy" type="button">Copiar correo</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<main id="project" hidden></main>
+
+<div id="player" hidden role="dialog" aria-modal="true" aria-label="Reproductor de video">
+  <button class="x" type="button" id="pClose" aria-label="Cerrar">✕</button>
+  <div class="box">
+    <button class="nv l" type="button" id="pPrev" aria-label="Video anterior"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button>
+    <div class="phone"><div class="scr" id="pScr"></div></div>
+    <button class="nv r" type="button" id="pNext" aria-label="Video siguiente"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg></button>
+  </div>
+  <div class="info"><b id="pTitle"></b><a id="pLink" href="#" target="_blank" rel="noopener">Ver en TikTok ↗</a></div>
+</div>
+
+<footer><div class="wrap"><span>Valentina Gómez Rave · Comunicadora social y periodista</span><span>Bogotá, Colombia</span></div></footer>
+
+<script>
+const BRANDS = [
+  { slug:"unlimited-tecno", name:"Unlimited Tecno", niche:"Tecnología", handle:"@unlimitedtecno", bg:"var(--s1)",
+    profile:"https://www.tiktok.com/@unlimitedtecno",
+    about:"Tienda de tecnología y gaming en Bogotá: computadores, periféricos, consolas y soluciones para negocios.",
+    did:"Videos UGC para TikTok: presentación de producto, temporadas comerciales como Día de la Madre y Amor y Amistad, y noticias del mundo gamer.",
+    result:null,
+    videos:[
+      ["7651961745342352661","Teclado para tu tablet","0:33"],
+      ["7644540792924572949","Xbox Series X en Bogotá","0:48"],
+      ["7646394473987018005","Monitor portátil para tu setup","0:54"],
+      ["7642313410599767317","Sistema POS para tu negocio","0:39"],
+      ["7637118701296160020","Computadores para mamá","0:40"],
+      ["7672372542530735381","Noticias sobre GTA VI","0:37"],
+      ["7682762440416775444","Regalo para amor y amistad","0:48"],
+      ["7673113033425636629","Teclados mecánicos para dama","0:38"]
+    ]},
+  { slug:"guapuritas", name:"Guapuritas", niche:"Moda infantil", handle:"@guapuritasgirls", bg:"var(--s2)",
+    profile:"https://www.tiktok.com/@guapuritasgirls",
+    about:"Fábrica y bodega de ropa para niñas de 3 a 13 años en Bogotá, con venta por mayor y detal y envíos a toda Colombia.",
+    did:"Videos UGC para TikTok que recorren la bodega y muestran las prendas, pensados para emprendedoras y compradores mayoristas.",
+    result:null,
+    videos:[
+      ["7630811625779383560","Bodega de ropa para niña para emprender","0:51"],
+      ["7629324377682709778","Bodega de ropa infantil en el centro de Bogotá","0:46"],
+      ["7636005152729632007","Proveedores por mayor y detal en Bogotá","0:44"],
+      ["7638602144005901576","Una experiencia de regalo siempre","0:30"],
+      ["7639717044350356744","Fábrica de ropa para niñas de 3 a 13 años","0:29"],
+      ["7654187609790532872","Fabricantes y mayoristas de ropa infantil","0:27"],
+      ["7685728562460019986","Colapsados de pedidos","0:26"],
+      ["7690552998967217426","Envíos de ropa infantil a toda Colombia","0:34"]
+    ]},
+  { slug:"eleve", name:"ELEVÉ", niche:"Gastrobar rooftop", handle:"@eleverooftop", bg:"var(--s6)",
+    profile:"https://www.tiktok.com/@eleverooftop",
+    about:"Rooftop y gastrobar en el centro de Bogotá.",
+    did:"Videos UGC para TikTok e Instagram que muestran el lugar, la comida y la experiencia, incluidos planes para empresas.",
+    result:null,
+    videos:[
+      ["7690572241133718804","Restaurante nuevo en Bogotá","0:40"],
+      ["7700967436706712884","La despedida de tu empresa en un rooftop","0:32"],
+      ["ig-Ddbq1yQAgSe","Nuevo restaurante en el centro de Bogotá · Reel","0:35"]
+    ]},
+  { slug:"doers", name:"DOERS", niche:"Moda", handle:"@doers.jeans", bg:"var(--s3)",
+    profile:"https://www.tiktok.com/@doers.jeans",
+    about:"Marca de ropa para dama con venta al por mayor y al detal.",
+    did:"Videos cortos de producto para TikTok que muestran prendas, tonos y estilo en uso.",
+    result:null,
+    videos:[
+      ["7644543212073274645","Sudadera para dama en tres tonos","0:20"],
+      ["7636375569747283221","Suéter para dama","0:15"],
+      ["7642315306018393364","Chaqueta ovejera para dama","0:17"]
+    ]},
+  { slug:"arte-activo", name:"Arte Activo", niche:"Insumos textiles", handle:"@marquillasarteactivo", bg:"var(--s4)",
+    profile:"https://www.tiktok.com/@marquillasarteactivo",
+    about:"Fábrica de insumos para marcas de ropa: etiquetas, marquillas, bolsas y garras en un solo lugar.",
+    did:"Videos UGC que explican cómo funciona la fábrica y presentan productos del catálogo de fidelización.",
+    result:null,
+    videos:[
+      ["7706140998690295061","Así funciona una fábrica de insumos","1:19"],
+      ["7694636360707247380","Producto del catálogo de fidelización","0:34"]
+    ]},
+  { slug:"mava", name:"Fajas Mava", niche:"Fajas y moldeadores", handle:"@ofical_mava", bg:"var(--s5)",
+    profile:"https://www.tiktok.com/@ofical_mava",
+    about:"Fabricantes de fajas y prendas moldeadoras en Bogotá, con venta por mayor y detal y exportación.",
+    did:"Videos UGC para TikTok que muestran las fajas puestas, el realce y cómo se ven con la ropa del día a día.",
+    result:null,
+    videos:[
+      ["mava-1","Faja con tirantes en tono vino","0:19"],
+      ["mava-2","Una faja que realza tu figura","0:51"],
+      ["mava-3","Faja tipo short con realce","0:44"],
+      ["mava-4","Faja invisible bajo la ropa","0:28"],
+      ["mava-5","Cómo se ve con jeans","0:30"],
+      ["mava-6","Prueba de faja con outfit","0:39"],
+      ["mava-7","Body moldeador negro","0:47"],
+      ["mava-8","Faja en tono nude","0:32"]
+    ]}
+];
+/* Datos públicos de cada perfil de TikTok (24 nov 2026) */
+const TT = {
+  "unlimited-tecno": {name:"unlimitedtecno", fg:"150", fr:"7.318", lk:"35,7 mil", bio:"Tienda de Tecnología y Servicio Técnico. Neos Centro Local 209", link:"unlimitedtecno.com"},
+  "guapuritas": {name:"Guapuritas Girls", fg:"31", fr:"18,3 mil", lk:"47,6 mil", bio:"Moda para niñas que crean su propio estilo. San Victorino, Bogotá · Envíos nacionales · Mayoristas y detal", link:"tr.ee/PCmNlpOIkH"},
+  "doers": {name:"Doers Jeans", fg:"8", fr:"4.808", lk:"14 mil", bio:"Cuando te ves bien, te sientes imparable. Mayoristas y detal", link:""},
+  "arte-activo": {name:"Marquillas Arte Activo", fg:"9", fr:"5.663", lk:"16,9 mil", bio:"Somos los N.º 1 en insumos textiles en Bogotá. Agenda tu cita", link:"linkr.bio/marquillasarteactivo.com"},
+  "yaros": {name:"Yaros Maternidad", fg:"0", fr:"63", lk:"394", bio:"Importadores de productos para el cuidado y bienestar de tu bebé. Maternidad con más comodidad y menos complicaciones", link:""},
+  "eleve": {name:"eleverooftop", fg:"3", fr:"121", lk:"703", bio:"El gesto de subir, hecho ritual. Rooftop Centro de Bogotá · Gastrobar", link:""},
+  "mava": {name:"Oficial_mava", fg:"634", fr:"73,6 mil", lk:"55,7 mil", bio:"Bogotá, Colombia · Somos fabricantes · El mejor realce del mercado · Ventas por mayor y detal · Exportadores", link:"linktr.ee/MAVAFAJAS"}
+};
+const WORDS = ["uno","dos","tres","cuatro","cinco","seis","siete","ocho"];
+BRANDS.push({ slug:"yaros", name:"YAROS", niche:"Productos para bebé", handle:"@yaros.27", bg:"var(--s7)",
+    profile:"https://www.tiktok.com/@yaros.27",
+    about:"Importadores de productos para el cuidado y bienestar del bebé: pañaleras, cargadores y cobertores.",
+    did:"Videos UGC para TikTok y posts para Instagram con fotografía de producto y textos que muestran usos y beneficios.",
+    result:null,
+    videos:[
+      ["7698348794299190549","La pañalera más completa","0:37"],
+      ["7703915250445389062","Pañaleras que mantienen el tetero caliente","0:29"],
+      ["7704657476058238214","Combos de pañalera y cargador · Black Friday","0:27"],
+      ["7706141274566348033","Cobertor liviano que sí abriga","0:25"],
+      ["7699463895227976961","Las pañaleras más pedidas","0:20"]
+    ],
+    posts:[
+      ["yaros-1","Comodidad y libertad en cada aventura","https://www.instagram.com/p/Df7MpF6qFFN/"],
+      ["yaros-2","Muchas formas de usar el cargador","https://www.instagram.com/p/DfXnYgnoGT4/"],
+      ["yaros-3","Comodidad total para ti y tu bebé","https://www.instagram.com/p/De1rGUaoMUl/"]
+    ]});
+/* Datos públicos de Instagram (24 nov 2026) */
+const IG = {
+  "mava":  {user:"oficial_mava", name:"fajas mava · fajas colombianas", posts:"317", fr:"12 mil", fg:"1.122", bio:"Fajas colombianas", url:"https://www.instagram.com/oficial_mava/"},
+  "eleve": {user:"eleverooftopg", name:"ELEVÉ Rooftop", posts:"42", fr:"694", fg:"", bio:"Rooftop · Gastrobar en el centro de Bogotá", url:"https://www.instagram.com/eleverooftopg/"},
+  "yaros": {user:"yaros.er2", name:"YAROS", posts:"84", fr:"2.571", fg:"", bio:"Cargadores ergonómicos para bebé", url:"https://www.instagram.com/yaros.er2/"}
+};
+const postImg = id => `assets/${id}.jpg`;
+/* Fotos extra de los carruseles de YAROS (para llenar su feed) */
+const YAROS_FEED = ["yaros-1","yaros-2-1","yaros-2-2","yaros-2-3","yaros-2-4","yaros-2-5","yaros-3-1","yaros-3-2","yaros-3-3","yaros-3-4","yaros-3-5"];
+/* Videos con cuadros extra (-b, -c) para que ninguna grilla quede vacía */
+const EXTRA_FRAMES = new Set(["7698348794299190549","7703915250445389062","7704657476058238214","7706141274566348033","7699463895227976961","7644543212073274645","7636375569747283221","7642315306018393364","7706140998690295061","7694636360707247380","7690572241133718804","7700967436706712884","ig-Ddbq1yQAgSe","mava-1"]);
+function feedCells(b, n, net){
+  if (b.slug === "yaros" && net === "ig") return YAROS_FEED.slice(0, n).map(postImg);
+  const ids = b.videos.map(v => v[0]);
+  const list = ids.map(thumb).concat(ids.filter(id => EXTRA_FRAMES.has(id)).map(id => `assets/${id}-b.jpg`), ids.filter(id => EXTRA_FRAMES.has(id)).map(id => `assets/${id}-c.jpg`));
+  const out = []; for (let i = 0; out.length < n && list.length; i++) out.push(list[i % list.length]);
+  return out;
+}
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const thumb = id => `assets/${id}.jpg`;
+const vfile = id => `assets/video/${id}.mp4`;
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const isMobile = () => innerWidth < 600;
+const ALL = BRANDS.flatMap(b => b.videos.map(v => ({id:v[0], t:v[1], b:b.name})));
+const byId = id => ALL.find(v => v.id === id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const vid = (id, opts="muted loop playsinline autoplay preload=\"none\" data-auto") => `<video src="${vfile(id)}" poster="${thumb(id)}" ${opts}></video>`;
+const gvid = id => `<video src="${vfile(id)}" poster="${thumb(id)}" muted loop playsinline preload="none"></video>`;
+const postCard = (b, p, extra="") => `<div class="igpost" ${extra}><div class="ig-h"><img src="assets/avatar-ig-${b.slug}.jpg" alt=""><b>${esc(IG[b.slug] ? IG[b.slug].user : b.handle)}</b><span>⋯</span></div><img class="ig-img" src="${postImg(p[0])}" alt="${esc(p[1])}" loading="lazy"><div class="ig-a"><span>♡</span><span>◯</span><span>➤</span><span class="sv">⊓</span></div></div>`;
+const phone = (src, cap, sub, extra="", inner="") => `<div class="phone" ${extra}><div class="scr">${src?`<img src="${src}" alt="" loading="lazy">`:""}${inner}${cap?`<span class="shade"></span><div class="cap">${esc(cap)}${sub?`<small>${esc(sub)}</small>`:""}</div>`:""}</div></div>`;
+/* ---------- Versión oscura / clara ---------- */
+const themeSwitch = () => `<div class="theme" role="group" aria-label="Versión de color"><button type="button" data-set="dark"><span class="ico">☾</span><span class="tx">Oscura</span></button><button type="button" data-set="light"><span class="ico">☀</span><span class="tx">Clara</span></button></div>`;
+function bindTheme(){
+  const cur = document.documentElement.dataset.look;
+  $$(".theme button").forEach(b => {
+    b.setAttribute("aria-pressed", b.dataset.set === cur ? "true" : "false");
+    b.onclick = () => { document.documentElement.dataset.look = b.dataset.set; try { localStorage.setItem("vgr-look", b.dataset.set); } catch(e){} bindTheme(); };
+  });
+}
+$("#navTheme").innerHTML = themeSwitch(); bindTheme();
+$("#vcount").textContent = "+" + ALL.length;
+$("#sVideos").textContent = ALL.length;
+$("#sBrands").textContent = BRANDS.length;
+
+/* ---------- Hero ---------- */
+const heroPhones = [
+  {id:"7630811625779383560", x:4,  y:14, d:0.6, r:-10, z:-120},
+  {id:"7706140998690295061", x:58, y:2,  d:0.9, r:8,  z:-60},
+  {me:true,                  x:30, y:20, d:1.3, r:-2, z:80},
+  {id:"7644540792924572949", x:64, y:46, d:1.1, r:12, z:20}
+];
+$("#cluster").innerHTML = heroPhones.map(p => { const v = p.me ? null : byId(p.id);
+  return phone(p.me ? "assets/valentina-retrato.jpg" : thumb(p.id), p.me ? "Valentina" : v.t, p.me ? "Comunicadora · Periodista" : v.b,
+  `data-d="${p.d}" data-r="${p.r}" data-z="${p.z}" ${p.me ? "" : 'data-vid="' + p.id + '"'} style="left:${p.x}%;top:${p.y}%;z-index:${Math.round(p.d*10)}"`); }).join("");
+
+/* ---------- Sobre mí: teléfono con video ---------- */
+$("#aboutPhone").innerHTML = `<div class="scr">${vid("7639717044350356744")}<span class="shade"></span><div class="cap">Guapuritas<small>@guapuritasgirls</small></div></div>`;
+
+/* ---------- Método ---------- */
+const STEPS = [
+  {w:"Investigar", vid:"7706140998690295061", p:"Antes de grabar entiendo la marca, el producto y a quién le hablamos. Reviso tendencias y lo que ya funciona en la cuenta.", ex:["Brief","Público","Referentes"]},
+  {w:"Narrar", vid:"7630811625779383560", p:"Escribo el guion como una buena nota: gancho en los primeros segundos, una historia clara y un cierre que invite a actuar.", ex:["Gancho","Guion","Llamado a la acción"]},
+  {w:"Grabar y redactar", vid:"7644540792924572949", p:"Grabo con naturalidad, como le hablaría a una amiga, y acompaño cada video con un copy pensado para la red y el tono de la marca.", ex:["UGC","Copy","Edición"]},
+  {w:"Medir", vid:"7690552998967217426", p:"Reviso alcance, interacción y retención para ajustar la siguiente tanda de contenido con datos, no con suposiciones.", ex:["Alcance","Interacción","Ajustes"]}
+];
+$("#steps").innerHTML = STEPS.map((s,i) => { const v = byId(s.vid); return `
+  <article class="step${i?"":" on"}" data-i="${i}">
+    <span class="n">${WORDS[i]}</span>
+    <h3>${s.w}</h3>
+    <p>${s.p}</p>
+    <div class="ex">${s.ex.map(e=>`<span>${e}</span>`).join("")}</div>
+    <div class="mini">${phone(null, v.t, v.b, "", gvid(s.vid))}</div>
+  </article>`; }).join("");
+$("#mScr").innerHTML = STEPS.map((s,i) => `<video data-i="${i}" src="${vfile(s.vid)}" poster="${thumb(s.vid)}" muted loop playsinline preload="none" style="opacity:${i?0:1}"></video>`).join("") + `<span class="shade"></span>`;
+let mActive = -1;
+function setStep(i){
+  if (i === mActive) return; mActive = i;
+  $$("#steps .step").forEach((s,k) => s.classList.toggle("on", k === i));
+  $$("#mScr video").forEach((v,k) => { v.style.opacity = k === i ? 1 : 0; k === i ? v.play().catch(()=>{}) : v.pause(); });
+  const v = byId(STEPS[i].vid); $("#mBrand").textContent = v.b; $("#mStep").textContent = STEPS[i].w.toLowerCase();
+}
+
+/* ---------- Carrusel de marcas ---------- */
+const fan = [[4,12,-12,0.6],[30,4,0,1],[56,14,12,0.75]];
+$("#brandTrack").innerHTML = BRANDS.map((b,i) => {
+  const vids = b.videos.slice(0,3);
+  const vis = b.kind === "posts"
+    ? ["yaros-2-2","yaros-1","yaros-3-2"].map((id,k) => phone(postImg(id), b.posts[k][1], b.handle, `data-k="${fan[k][3]}" data-r="${fan[k][2]}" style="left:${fan[k][0]}%;top:${fan[k][1]}%;z-index:${k===1?3:1}"`)).join("")
+    : false
+    ? b.posts.slice(0,3).map((p,k) => postCard(b, p, `data-k="${fan[k][3]}" data-r="${fan[k][2]}" style="left:${fan[k][0] - 2}%;top:${fan[k][1] + 6}%;z-index:${k===1?3:1}"`)).join("")
+    : vids.length
+    ? vids.map((v,k) => phone(null, v[1], b.handle, `data-k="${fan[k][3]}" data-r="${fan[k][2]}" style="left:${fan[k][0]}%;top:${fan[k][1]}%;z-index:${k===1?3:1}"`, gvid(v[0]))).join("")
+    : `<div class="soon">${phone(null,null,null,`data-k="1" data-r="-4" style="position:relative;width:min(190px,40vw)"`,`<span>Videos<br>en camino</span>`)}</div>`;
+  return `<a class="slide" href="#${b.slug}" style="background:${b.bg}">
+    <span class="num">${WORDS[i]}</span>
+    <div class="txt">
+      <div class="eyebrow">${esc(b.niche)}</div>
+      <h3>${esc(b.name)}</h3>
+      <p>${esc(b.about)}</p>
+      <div class="meta"><span>${b.videos.length ? b.videos.length + " videos" : "Próximamente"}${b.posts ? " · " + b.posts.length + " posts" : ""}</span><span>${IG[b.slug] ? "TikTok · Instagram" : "TikTok"}</span><span>${esc(b.handle)}</span></div>
+      <span class="go">Ver proyecto <svg class="chev-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6.5 18.5 12 13 17.5"/></svg></span>
+    </div>
+    <div class="vis" data-group>${vis}</div>
+  </a>`;
+}).join("");
+const track = $("#brandTrack"), slides = $$(".slide");
+$("#dots").innerHTML = slides.map(()=>"<i></i>").join("");
+const step = dir => track.scrollBy({left: dir * (slides[0].offsetWidth + (isMobile()?16:28)), behavior: reduce ? "auto" : "smooth"});
+$("#prev").onclick = () => step(-1); $("#next").onclick = () => step(1);
+
+/* ---------- Posts en el inicio ---------- */
+{ const yb = BRANDS.find(x => x.slug === "yaros"), pos = [[0,8,-7,-0.06],[30,0,2,-0.14],[60,12,8,-0.09]];
+  $("#phStack").innerHTML = yb.posts.map((p,k) => `<a href="#yaros" class="ph-item" data-sy="${pos[k][3]}" style="left:${pos[k][0]}%;top:${pos[k][1]}%;z-index:${k===1?3:1}">${postCard(yb, p, `style="transform:rotate(${pos[k][2]}deg)"`)}</a>`).join(""); }
+
+/* ---------- Intro ---------- */
+const intro = $("#intro");
+function endIntro(){ if (intro.classList.contains("show")) return; intro.classList.add("show"); setTimeout(()=>{ intro.classList.add("done"); setTimeout(()=>{ intro.hidden = true; $("#stage").innerHTML = ""; document.body.classList.remove("intro-on"); }, 800); }, 1500); }
+function runIntro(){
+  if (reduce || BRANDS.some(b => "#"+b.slug === location.hash)) { intro.hidden = true; return; }
+  const stage = $("#stage"), N = isMobile() ? 14 : 22, cards = [], LIVE = isMobile() ? 4 : 6;
+  // videos livianos para que carguen rápido durante la intro
+  const pool = ["7644543212073274645","7642315306018393364","7636375569747283221","7654187609790532872","7694636360707247380","mava-1",
+                "7651961745342352661","7685728562460019986","7672372542530735381","7639717044350356744","mava-5","7638602144005901576"];
+  for (let i=0;i<N;i++){
+    const el = document.createElement("div"); el.className = "fly";
+    // solo los primeros LIVE llevan video (livianos); el resto usa portada para que la intro vaya fluida
+    const id = i < LIVE ? pool[i] : ALL[(i * 7) % ALL.length].id;
+    el.innerHTML = i < LIVE
+      ? phone(null, null, null, "", `<video src="${vfile(id)}" poster="${thumb(id)}" muted autoplay loop playsinline preload="auto"></video>`)
+      : phone(null, null, null, "", `<img src="${thumb(id)}" alt="" decoding="async">`);
+    stage.appendChild(el);
+    const a = Math.random()*Math.PI*2, rad = 110 + Math.random()*Math.max(innerWidth,innerHeight)*0.5;
+    cards.push({el, x:Math.cos(a)*rad, y:Math.sin(a)*rad*0.7, z:-3400 - i*(2600/N), r:(Math.random()-.5)*20});
+  }
+  const DUR = 3400, DIST = 46 * 60 * DUR / 1000;   // recorrido total; avanza por tiempo, no por cuadro
+  cards.forEach(c => c.z0 = c.z);
+  document.body.classList.add("intro-on");
+  let t0 = 0;
+  requestAnimationFrame(() => requestAnimationFrame(now => { t0 = now; frame(now); }));
+  function frame(now){
+    const t = Math.min((now - t0)/DUR, 1);
+    cards.forEach(c => {
+      c.z = c.z0 + DIST * (0.5*t + 0.75*t*t);
+      c.el.style.opacity = c.z > 450 ? Math.max(0, 1 - (c.z-450)/300) : Math.min(1, (c.z + 3600)/900);
+      c.el.style.transform = `translate(-50%,-50%) translate3d(${c.x}px,${c.y}px,${c.z}px) rotate(${c.r}deg)`;
+    });
+    if (t < 1 && !intro.classList.contains("show")) requestAnimationFrame(frame); else endIntro();
+  }
+}
+$("#skip").onclick = endIntro;
+
+/* ---------- Reproductor ---------- */
+const player = $("#player"); let plist = [], pidx = 0, pbrand = null, lastFocus = null;
+function showVideo(){
+  const v = plist[pidx];
+  $("#pTitle").textContent = v[1]; const isIg = v[0].startsWith("ig-");
+  $("#pLink").href = /^\d+$/.test(v[0]) ? `${pbrand.profile}/video/${v[0]}` : isIg ? `https://www.instagram.com/reel/${v[0].slice(3)}/` : pbrand.profile;
+  $("#pLink").textContent = isIg ? "Ver en Instagram ↗" : "Ver en TikTok ↗";
+  $("#pScr").innerHTML = `<video src="${vfile(v[0])}" poster="${thumb(v[0])}" playsinline autoplay loop controls controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture disableremoteplayback></video>`;
+  const el = $("#pScr video");
+  el.play().catch(()=>{ el.muted = true; el.play().catch(()=>{}); });
+}
+function openPlayer(b, i){ pbrand = b; plist = b.videos; pidx = i; lastFocus = document.activeElement; player.hidden = false; document.body.style.overflow = "hidden"; $$("main video").forEach(v => v.pause()); showVideo(); $("#pClose").focus(); }
+function closePlayer(){ player.hidden = true; $("#pScr").innerHTML = ""; document.body.style.overflow = ""; lastFocus && lastFocus.focus(); resumeVisible(); kick(); }
+$("#pClose").onclick = closePlayer;
+$("#pPrev").onclick = () => { pidx = (pidx - 1 + plist.length) % plist.length; showVideo(); };
+$("#pNext").onclick = () => { pidx = (pidx + 1) % plist.length; showVideo(); };
+player.addEventListener("click", e => { if (e.target === player) closePlayer(); });
+addEventListener("keydown", e => { if (player.hidden) return; if (e.key === "Escape") closePlayer(); if (e.key === "ArrowRight") $("#pNext").click(); if (e.key === "ArrowLeft") $("#pPrev").click(); });
+
+/* ---------- Proyecto ---------- */
+const proj = $("#project"), home = $("#home");
+let curBrand = null, vIdx = 0;
+function projectHTML(b){
+  const i = BRANDS.indexOf(b), nx = BRANDS[(i+1) % BRANDS.length], n = b.videos.length;
+  const pv = b.videos.slice(0,3), spots = [[2,14,-10,0.6],[32,2,0,1.2],[60,16,10,0.85]];
+  const visH = b.kind === "posts" ? ["yaros-2-2","yaros-1","yaros-3-2"].map((id,k) => phone(postImg(id), b.posts[k][1], b.handle, `data-d="${spots[k][3]}" data-r="${spots[k][2]}" style="left:${spots[k][0]}%;top:${spots[k][1]}%;z-index:${k===1?3:1}"`)).join("")
+    : false ? b.posts.slice(0,3).map((p,k) => postCard(b, p, `data-d="${spots[k][3]}" data-r="${spots[k][2]}" style="left:${spots[k][0]}%;top:${spots[k][1] + 8}%;z-index:${k===1?3:1}"`)).join("")
+    : pv.length ? pv.map((v,k)=>phone(null, v[1], b.handle, `data-d="${spots[k][3]}" data-r="${spots[k][2]}" style="left:${spots[k][0]}%;top:${spots[k][1]}%;z-index:${k===1?3:1}"`, gvid(v[0]))).join("")
+    : phone("assets/valentina-retrato.jpg","Próximamente",b.name,`data-d="1" data-r="-4" style="left:30%;top:4%"`);
+  const fact = (h,t,todo) => `<div class="fact"><h4>${h}</h4><p class="${t?"":"todo"}">${t ? esc(t) : todo}</p></div>`;
+  const videos = n ? `
+    <section class="vpin" id="vpin" style="height:calc(100vh + ${Math.max(n-1,1)*42}vh)">
+      <div class="sticky">
+        <div class="wrap vhead">
+          <h2 class="title">${n} videos para <span class="script">${esc(b.name)}</span></h2>
+          <div class="vctrl"><button class="navbtn" type="button" id="vPrev" aria-label="Videos anteriores"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button><span class="vcount" id="vNum">1–3 de ${n}</span><button class="navbtn" type="button" id="vNext" aria-label="Videos siguientes"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg></button></div>
+        </div>
+        <div class="vwin"><div class="vrail" id="vrail" data-group>${b.videos.map((v,k)=>`
+          <button class="vcard" type="button" data-i="${k}" aria-label="Reproducir ${esc(v[1])}">
+            <div class="phone"><div class="scr">${gvid(v[0])}<span class="dur">${v[2]}</span><span class="play"></span><span class="shade"></span><div class="cap">${esc(v[1])}<small>${esc(b.handle)}</small></div></div></div>
+          </button>`).join("")}</div></div>
+        <div class="wrap"><div class="vprog"><i id="vBar"></i></div></div>
+      </div>
+    </section>`
+    : b.kind === "posts" ? postsHTML(b)
+    : `<div class="wrap" id="vpin"><div class="empty"><b>Vienen en camino</b><span>Los videos de ${esc(b.name)} se cargarán pronto. Mientras tanto, mira la cuenta en <a href="${b.profile}" target="_blank" rel="noopener">TikTok ↗</a></span></div></div>`;
+  return `
+  <div class="wrap pnav"><div class="in">
+    <a class="logo plogo" href="#marcas" aria-label="Volver al inicio">Valentina Gómez Rave</a>
+    <button class="navbtn" type="button" id="bPrev" aria-label="Marca anterior"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button>
+    <div class="bdrop"><button class="bd-btn" type="button" id="bdBtn" aria-expanded="false" aria-controls="bdMenu"><span class="bd-k">Marca</span><b>${esc(b.name)}</b><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5 12 15l5.5-5.5"/></svg></button>
+      <div class="bd-menu" id="bdMenu" hidden><a href="#marcas" class="bd-home">← Todas las marcas</a>${BRANDS.map(x=>`<a href="#${x.slug}" class="${x===b?"on":""}"><span>${esc(x.name)}</span><small>${esc(x.niche)}</small></a>`).join("")}</div></div>
+    <span class="bd-sp"></span>
+    <button class="jump" type="button" data-jump="top">Resumen</button>
+    <button class="jump" type="button" data-jump="vpin">Videos</button>
+    <button class="navbtn" type="button" id="bNext" aria-label="Marca siguiente"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg></button>
+    ${themeSwitch()}
+  </div></div>
+  <section class="p-hero" id="ptop">
+    <div class="wrap p-grid">
+      <div class="p-text">
+        <div class="eyebrow">Proyecto ${WORDS[i]} · ${esc(b.niche)}</div>
+        <h1>${esc(b.name)}</h1>
+        <div class="facts">
+          ${fact("Sobre la marca", b.about, "Pendiente")}
+          ${fact("Qué hice", b.did, "Pendiente: enfoque, formatos y piezas entregadas.")}
+        </div>
+      </div>
+      <div class="p-vis" id="pvis" data-group>${visH}<span class="sticker">proyecto ${WORDS[i]}</span></div>
+    </div>
+  </section>
+  ${socialHTML(b)}
+  ${videos}
+  ${b.posts ? postsHTML(b) : ""}
+  <div class="wrap"><a class="nextp" href="#${nx.slug}"><span class="eyebrow">Siguiente proyecto</span><b>${esc(nx.name)} <svg class="chev-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6.5 18.5 12 13 17.5"/></svg></b></a></div>`;
+}
+/* Pista de videos: "per" videos por vista; el scroll la mueve y las flechas saltan de página */
+let vPer = 3, vStepPx = 0, vMax = 0, vFirst = 0;
+function perView(){ return innerWidth < 600 ? 1 : innerWidth < 900 ? 2 : innerWidth < 1150 ? 3 : 4; }
+function layoutRail(){
+  const rail = $("#vrail"); if (!rail) return;
+  const win = rail.parentElement, cs = getComputedStyle(win);
+  const W = win.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  vPer = Math.min(perView(), rail.children.length);
+  const gap = innerWidth < 600 ? 18 : 36;
+  const avail = innerHeight - (innerWidth < 600 ? 250 : 240);       // alto libre para el teléfono
+  const cw = Math.max(150, Math.min((W - gap*(vPer-1)) / vPer, avail * 9 / 19, 470));
+  rail.style.setProperty("--cw", cw + "px"); rail.style.gap = gap + "px";
+  const group = cw*vPer + gap*(vPer-1);
+  rail.style.paddingLeft = Math.max(0, (W - group)/2) + "px";
+  vStepPx = cw + gap;
+  vMax = Math.max(0, rail.scrollWidth - W);
+}
+function postsHTML(b){
+  return `<section class="sec posts-sec" id="posts-sec">
+    <div class="wrap">
+      <div class="eyebrow">Contenido creado</div>
+      <h2 class="title">${b.posts.length} posts para <span class="script">${esc(b.name)}</span></h2>
+      <div class="post-grid">${b.posts.map((p,i) => `<a class="post-link" href="${p[2]}" target="_blank" rel="noopener" data-sy="${-0.03 - i*0.04}">${postCard(b, p)}<span class="post-cap">${esc(p[1])} <small>Ver en Instagram ↗</small></span></a>`).join("")}</div>
+    </div>
+  </section>`;
+}
+function socialHTML(b){
+  const t = TT[b.slug], g = IG[b.slug]; if (!t && !g) return "";
+  const vthumbs = b.videos.slice(0,6).map(v => thumb(v[0]));
+  const ttPhone = t ? `<div class="phone tt-phone"><div class="scr tt">
+      <div class="tt-top"><span>‹</span><b>${esc(t.name)}</b><span>⋯</span></div>
+      <img class="tt-av" src="assets/avatar-${b.slug}.jpg" alt="">
+      <div class="tt-handle">${esc(b.handle)}</div>
+      <div class="tt-nums"><span><b>${t.fg}</b>Siguiendo</span><span><b>${t.fr}</b>Seguidores</span><span><b>${t.lk}</b>Me gusta</span></div>
+      <div class="tt-btns"><span class="tt-follow">Seguir</span><span class="tt-msg">Mensaje</span></div>
+      <p class="tt-bio">${esc(t.bio)}</p>${t.link ? `<p class="tt-link">${esc(t.link)}</p>` : ""}
+      <div class="tt-tabs"><span class="on">▦</span><span>♡</span></div>
+      <div class="tt-grid">${feedCells(b, 9).map((src,i) => `<div class="tt-cell"><img src="${src}" alt="" loading="lazy"><span>▷ ${(b.videos[i % Math.max(b.videos.length,1)] || ["","","0:30"])[2]}</span></div>`).join("")}</div>
+    </div></div>` : "";
+  const igCells = feedCells(b, 9, "ig");
+  const igPhone = g ? `<div class="phone tt-phone ig-phone"><div class="scr tt ig">
+      <div class="tt-top"><b>${esc(g.user)}</b><span>≡</span></div>
+      <div class="ig-head"><img class="tt-av" src="assets/avatar-ig-${b.slug}.jpg" alt="">
+        <div class="ig-nums"><span><b>${g.posts}</b>publicaciones</span><span><b>${g.fr}</b>seguidores</span>${g.fg ? `<span><b>${g.fg}</b>seguidos</span>` : ""}</div></div>
+      <p class="ig-name">${esc(g.name)}</p><p class="tt-bio ig-bio">${esc(g.bio)}</p>
+      <div class="tt-btns ig-btns"><span class="ig-follow">Seguir</span><span class="tt-msg">Mensaje</span></div>
+      <div class="tt-tabs"><span class="on">▦</span><span>▷</span><span>◫</span></div>
+      <div class="tt-grid ig-grid">${igCells.map(src => `<div class="tt-cell"><img src="${src}" alt="" loading="lazy"></div>`).join("")}</div>
+    </div></div>` : "";
+  const stats = [t && [t.fr, "seguidores en TikTok"], t && [t.lk, "me gusta en TikTok"], g && [g.fr, "seguidores en Instagram"], g && [g.posts, "publicaciones en Instagram"]].filter(Boolean).slice(0, 3);
+  const nets = [t && "TikTok", g && "Instagram"].filter(Boolean).join(" e ");
+  return `<section class="sec social" id="redes">
+    <div class="wrap soc-grid${t && g ? " two" : ""}">
+      <div class="soc-copy">
+        <div class="eyebrow">La marca en redes</div>
+        <h2 class="title">${esc(b.name)} en <span class="script">${nets}</span></h2>
+        <div class="soc-stats">${stats.map(x => `<div class="stat"><b>${x[0]}</b><span>${x[1]}</span></div>`).join("")}</div>
+        <p class="sub">Datos públicos de los perfiles al 24 de noviembre de 2026.</p>
+        <div class="btns">
+          ${t ? `<a class="btn" href="${b.profile}" target="_blank" rel="noopener">TikTok <svg class="chev-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8M9.5 8H16v6.5"/></svg></a>` : ""}
+          ${g ? `<a class="btn${t ? " line" : ""}" href="${g.url}" target="_blank" rel="noopener">Instagram <svg class="chev-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8M9.5 8H16v6.5"/></svg></a>` : ""}
+        </div>
+      </div>
+      <div class="tt-wrap soc-phones" data-sy="-0.1">${ttPhone}${igPhone}</div>
+    </div>
+  </section>`;
+}
+function vGo(dir){
+  const pin = $("#vpin"); if (!pin || !vMax) return;
+  const target = Math.max(0, Math.min(vMax, (vFirst + dir*vPer) * vStepPx));
+  const top = pin.getBoundingClientRect().top + scrollY, span = pin.offsetHeight - innerHeight;
+  scrollTo({top: top + span * (target / vMax) + 2, behavior: reduce ? "auto" : "smooth"});
+}
+addEventListener("resize", () => { layoutRail(); });
+let lastY = 0;
+function route(){
+  const slug = location.hash.slice(1), b = BRANDS.find(x => x.slug === slug);
+  if (b){
+    if (!home.hidden) lastY = scrollY;
+    $$("#home video").forEach(v => v.pause());
+    curBrand = b; vIdx = 0; vFirst = 0;
+    proj.innerHTML = projectHTML(b); proj.hidden = false; home.hidden = true;
+    document.body.classList.add("in-project"); bindTheme();
+    const pin0 = $("#vpin.vpin"); if (pin0) pin0.style.height = `calc(100vh + ${Math.max(Math.ceil(b.videos.length / perView()) - 1, 1) * 70}vh)`;
+    layoutRail(); watchVideos(); addParallax(proj);
+    scrollTo({top:0, behavior:"instant"});
+    const i = BRANDS.indexOf(b);
+    $("#bPrev").onclick = () => location.hash = BRANDS[(i - 1 + BRANDS.length) % BRANDS.length].slug;
+    $("#bNext").onclick = () => location.hash = BRANDS[(i + 1) % BRANDS.length].slug;
+    $$(".pnav [data-jump]").forEach(btn => btn.onclick = () => btn.dataset.jump === "top" ? scrollTo({top:0, behavior:"smooth"}) : $("#vpin").scrollIntoView({behavior:"smooth"}));
+    { const bb = $("#bdBtn"), bm = $("#bdMenu");
+      const setO = o => { bm.hidden = !o; bb.setAttribute("aria-expanded", o ? "true" : "false"); };
+      bb.onclick = e => { e.stopPropagation(); setO(bm.hidden); };
+      bm.onclick = e => { if (e.target.closest("a")) setO(false); };
+      document.addEventListener("click", e => { if (!bm.hidden && !e.target.closest(".bdrop")) setO(false); });
+      addEventListener("keydown", e => { if (e.key === "Escape" && !bm.hidden) { setO(false); bb.focus(); } }); }
+    if (b.videos.length){
+      $$("#vrail .vcard").forEach(c => c.onclick = () => openPlayer(b, +c.dataset.i));
+      $("#vPrev").onclick = () => vGo(-1);
+      $("#vNext").onclick = () => vGo(1);
+    }
+  } else if (home.hidden){
+    home.hidden = false; proj.hidden = true; proj.innerHTML = ""; curBrand = null;
+    document.body.classList.remove("in-project");
+    const t = slug && document.getElementById(slug);
+    t ? t.scrollIntoView({behavior:"instant"}) : scrollTo({top:lastY, behavior:"instant"});
+  }
+  kick();
+}
+addEventListener("hashchange", route);
+
+/* ---------- Motor parallax ---------- */
+let mx = 0, my = 0, smx = 0, smy = 0, running = false, idle = 0, centerCard = null;
+const lerp = (a,b,t) => a + (b-a)*t;
+function playOnly(list, el){ list.forEach(v => { if (v === el){ v.paused && v.play().catch(()=>{}); } else if (!v.paused) v.pause(); }); }
+function frame(){
+  smx = lerp(smx, mx, .08); smy = lerp(smy, my, .08);
+  const vh = innerHeight, y = scrollY, mob = isMobile(), k = mob ? 0.85 : 1;
+  $$("[data-sy]").forEach(el => {
+    if (!el.offsetParent) return;
+    const r = el.parentElement.getBoundingClientRect(), off = (r.top + r.height/2 - vh/2);
+    el.style.transform = `translate3d(0, ${off * +el.dataset.sy * k}px, 0)` + (el.dataset.rot ? ` rotate(${el.dataset.rot}deg)` : el.id === "aboutPhone" ? " rotate(5deg)" : "");
+  });
+  $$("[data-sx]").forEach(el => {
+    if (!el.offsetParent) return;
+    const r = el.getBoundingClientRect(), off = (r.top + r.height/2 - vh/2);
+    el.style.transform = `translate3d(${off * +el.dataset.sx * k}px, 0, 0)`;
+  });
+  if (!home.hidden){
+    const cl = $("#cluster");
+    cl.style.transform = `rotateY(${smx*14}deg) rotateX(${-smy*10}deg)`;
+    cl.querySelectorAll(".phone").forEach(p => {
+      const d = +p.dataset.d;
+      p.style.transform = `translate3d(${smx*d*26}px, ${-y*d*0.3*k + smy*d*18}px, ${p.dataset.z}px) rotate(${+p.dataset.r + smx*d*3}deg)`;
+    });
+    $$(".float-card").forEach(c => { const d = +c.dataset.d; c.style.transform = `translate3d(${smx*d*30}px, ${-y*d*0.18*k + smy*d*20}px, 0)`; });
+    const pi = $("#pimg"), pr = pi.parentElement.getBoundingClientRect();
+    pi.style.transform = `translate3d(0, ${(pr.top - vh/2) * -0.05 - 18}px, 0)`;
+    $$(".ghost").forEach(g => { const r = g.parentElement.getBoundingClientRect(); g.style.transform = `translate3d(${(r.top - vh/2) * +g.dataset.gx}px,0,0)`; });
+    // teléfono de "sobre mí"
+    // método: paso activo según el centro de la pantalla
+    const steps = $$("#steps .step");
+    if (innerWidth > 980){
+      let best = 0, bd = 1e9;
+      steps.forEach((s,i) => { const r = s.getBoundingClientRect(), d = Math.abs(r.top + r.height/2 - vh/2); if (d < bd){ bd = d; best = i; } });
+      const mr = $("#metodo").getBoundingClientRect();
+      if (mr.top < vh && mr.bottom > 0) setStep(best); else { $$("#mScr video").forEach(v => v.pause()); mActive = -1; }
+      const orb = $(".m-orbit"); orb.style.transform = `rotate(${y*0.06}deg)`;
+      $("#mPhone").style.transform = `translate3d(${smx*16}px, ${smy*12}px, 0) rotate(${smx*4}deg)`;
+    } else {
+      // carrusel del método en celular/tablet: escala, giro y parallax interno según el centro
+      const sc = $("#steps"), sr = sc.getBoundingClientRect(), cxs = sr.left + sr.width/2;
+      let best = 0, bd = 1e9;
+      steps.forEach((st,i) => {
+        const r = st.getBoundingClientRect(), dist = (r.left + r.width/2 - cxs) / r.width, a = Math.min(Math.abs(dist), 1.5);
+        if (a < bd){ bd = a; best = i; }
+        st.style.transform = `scale(${1 - a*0.07}) rotate(${dist*-2}deg)`;
+        st.style.opacity = 1 - a*0.35;
+        const m = st.querySelector(".mini"); if (m) m.style.transform = `translate3d(${-dist*40}px, ${(r.top - vh/2) * -0.05}px, 0) rotate(${dist*6}deg)`;
+      });
+      $$("#mDots i").forEach((d,i) => d.classList.toggle("on", i === best));
+      groupPlay(sc, best);
+    }
+    // carrusel de marcas
+    const tc = track.getBoundingClientRect(), cx = tc.left + tc.width/2;
+    let best = 0, bestD = 1e9;
+    slides.forEach((s,i) => {
+      const r = s.getBoundingClientRect(), dist = (r.left + r.width/2 - cx) / r.width, a = Math.min(Math.abs(dist), 1.2);
+      if (Math.abs(dist) < bestD){ bestD = Math.abs(dist); best = i; }
+      s.style.transform = `scale(${1 - a*0.08})`;
+      s.style.opacity = 1 - a*0.45;
+      s.querySelectorAll(".vis .phone, .vis .igpost").forEach(p => {
+        const kk = +p.dataset.k;
+        p.style.transform = `translate3d(${-dist*kk*140 + smx*kk*14}px, ${(r.top - vh/2)*kk*-0.07*k + smy*kk*10}px,0) rotate(${+p.dataset.r + dist*kk*8}deg)`;
+      });
+    });
+    $$("#dots i").forEach((d,i) => d.classList.toggle("on", i === best));
+    slides.forEach((s,i) => groupPlay(s.querySelector(".vis"), i === best ? 1 : -1));
+    const vis = tc.top < vh && tc.bottom > 0;
+  } else if (curBrand){
+    $$("#pvis .phone, #pvis .igpost").forEach(p => { const d = +p.dataset.d; p.style.transform = `translate3d(${smx*d*24}px, ${-y*d*(mob ? 0.1 : 0.28) + smy*d*16}px,0) rotate(${+p.dataset.r + smx*d*3}deg)`; });
+    groupPlay($("#pvis"), 1);
+    const pin = $("#vpin"), rail = $("#vrail");
+    if (rail){
+      const cards = [...rail.children], n = cards.length, r = pin.getBoundingClientRect();
+      const prog = vMax ? Math.min(Math.max(-r.top / (pin.offsetHeight - vh), 0), 1) : 0;
+      const shift = vMax * prog;
+      rail.style.transform = `translate3d(${-shift}px,0,0)`;
+      const winR = rail.parentElement.getBoundingClientRect(), cx = winR.left + winR.width/2;
+      let best = 0, bd = 1e9;
+      cards.forEach((c,i) => {
+        const cr = c.getBoundingClientRect(), dist = (cr.left + cr.width/2 - cx) / (vStepPx || cr.width);
+        const a = Math.abs(dist), out = Math.max(0, a - (vPer - 1)/2 - 0.35);   // fuera de la vista
+        if (a < bd){ bd = a; best = i; }
+        c.style.transform = `translate3d(0, ${Math.sin(prog*Math.PI*2 + i*1.3)*10 + out*30}px, 0) rotate(${dist*1.6}deg)`;
+        c.style.opacity = 1 - Math.min(out*1.8, .92);
+      });
+      vIdx = best;
+      groupPlay(rail, best);
+      cards.forEach((c,i) => c.classList.toggle("playing", i === best && r.top < vh && r.bottom > 0));
+      vFirst = vStepPx ? Math.round(shift / vStepPx) : 0;
+      const last = Math.min(n, vFirst + vPer);
+      $("#vNum").textContent = vPer > 1 ? `${vFirst+1}–${last} de ${n}` : `${vFirst+1} de ${n}`;
+      $("#vBar").style.width = (vMax ? prog*100 : 100) + "%";
+      const inView = r.top < vh && r.bottom > 0;
+    }
+  }
+  if (Math.abs(smx-mx) + Math.abs(smy-my) > .001 || ++idle < 6) requestAnimationFrame(frame); else running = false;
+}
+function kick(){ idle = 0; if (!running){ running = true; requestAnimationFrame(frame); } }
+addEventListener("scroll", kick, {passive:true});
+addEventListener("resize", kick);
+track.addEventListener("scroll", kick, {passive:true});
+$("#steps").addEventListener("scroll", kick, {passive:true});
+$("#mDots").innerHTML = STEPS.map(() => "<i></i>").join("");
+if (!reduce) addEventListener("pointermove", e => { if (e.pointerType !== "mouse") return; mx = e.clientX/innerWidth - .5; my = e.clientY/innerHeight - .5; kick(); });
+
+/* ---------- Videos de los mockups: se reproducen en silencio cuando están en pantalla ---------- */
+const io = new IntersectionObserver(entries => entries.forEach(e => {
+  const v = e.target; v.muted = true;
+  if (e.isIntersecting && player.hidden) v.play().catch(()=>{}); else if (!v.paused) v.pause();
+}), {threshold: 0.12});
+/* id de video -> [marca, posición] para abrir cualquier mockup en la ventana emergente */
+const VIDX = {}; BRANDS.forEach(b => b.videos.forEach((v,i) => VIDX[v[0]] = [b, i]));
+document.addEventListener("click", e => {
+  if (!player.hidden || e.target.closest("#intro, #player")) return;
+  const ph = e.target.closest(".phone"); if (!ph) return;
+  const v = ph.querySelector("video");
+  const id = ph.dataset.vid || (v ? (v.getAttribute("src") || "").split("/").pop().replace(".mp4", "") : "");
+  const hit = VIDX[id]; if (!hit) return;
+  e.preventDefault(); e.stopPropagation();
+  openPlayer(hit[0], hit[1]);
+}, true);
+// sin menú contextual (evita "Guardar video como…")
+document.addEventListener("contextmenu", e => { if (e.target.closest("video, .phone")) e.preventDefault(); });
+/* Un solo video por grupo: el destacado, o el que tiene el cursor encima */
+function groupPlay(g, def){
+  if (!g) return;
+  const phones = [...g.querySelectorAll(".phone")].filter(p => p.querySelector("video"));
+  const r = g.getBoundingClientRect();
+  const vis = g.offsetParent && player.hidden && r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth;
+  const act = g.__hover != null ? g.__hover : def;
+  phones.forEach((p,i) => { const v = p.querySelector("video"); if (vis && i === act) { v.muted = true; v.paused && v.play().catch(()=>{}); } else if (!v.paused) v.pause(); });
+}
+let hoverGroup = null;
+document.addEventListener("mouseover", e => {
+  const g = e.target.closest("[data-group]");
+  if (hoverGroup && hoverGroup !== g){ hoverGroup.__hover = null; hoverGroup = null; kick(); }
+  if (!g) return;
+  const ph = e.target.closest(".phone");
+  const phones = [...g.querySelectorAll(".phone")].filter(p => p.querySelector("video"));
+  const i = ph ? phones.indexOf(ph) : -1;
+  if (i >= 0 && g.__hover !== i){ g.__hover = i; hoverGroup = g; kick(); }
+});
+function watchVideos(){ $$("video[data-auto]").forEach(v => { if (!v.__watched){ v.__watched = true; v.muted = true; io.observe(v); } }); }
+function resumeVisible(){ $$("video[data-auto]").forEach(v => { const r = v.getBoundingClientRect(); if (v.offsetParent && r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth) v.play().catch(()=>{}); }); }
+
+/* ---------- Menú de celular ---------- */
+{ const bt = $("#burger"), mm = $("#mmenu");
+  const setOpen = o => { mm.hidden = !o; bt.setAttribute("aria-expanded", o ? "true" : "false"); bt.setAttribute("aria-label", o ? "Cerrar menú" : "Abrir menú"); };
+  bt.onclick = e => { e.stopPropagation(); setOpen(mm.hidden); };
+  mm.addEventListener("click", e => { if (e.target.closest("a")) setOpen(false); });
+  document.addEventListener("click", e => { if (!mm.hidden && !e.target.closest(".nav")) setOpen(false); });
+  addEventListener("keydown", e => { if (e.key === "Escape" && !mm.hidden) { setOpen(false); bt.focus(); } });
+}
+
+/* ---------- Copiar correo ---------- */
+$("#copy").onclick = async e => {
+  const t = $("#mail").textContent;
+  try { await navigator.clipboard.writeText(t); e.target.textContent = "¡Copiado!"; }
+  catch { const r = document.createRange(); r.selectNodeContents($("#mail")); getSelection().removeAllRanges(); getSelection().addRange(r); e.target.textContent = "Selecciónalo y copia"; }
+  setTimeout(()=> e.target.textContent = "Copiar correo", 2200);
+};
+
+/* capas de parallax extra para todas las secciones */
+function addParallax(root){
+  const set = (sel, fn) => root.querySelectorAll(sel).forEach((el,i) => { if (!el.dataset.sy && !el.dataset.sx) fn(el,i); });
+  set(".sub, .about-head .lede", el => el.dataset.sy = "-0.04");
+  set(".stat", (el,i) => el.dataset.sy = String(-0.03 - (i % 4) * 0.025));
+  set(".story-cols p", (el,i) => el.dataset.sy = String(-0.03 - i * 0.05));
+  set(".facts-list", el => el.dataset.sy = "-0.05");
+  set(".svc-list li", (el,i) => el.dataset.sx = String(i % 2 ? 0.035 : -0.035));
+  set(".fact", (el,i) => el.dataset.sy = String(-0.02 - i * 0.03));
+  set(".soc-copy", el => el.dataset.sy = "-0.05");
+  set(".nextp", el => el.dataset.sy = "-0.04");
+  set(".mailrow", el => el.dataset.sy = "-0.03");
+}
+addParallax(document);
+route(); runIntro(); watchVideos(); kick();
+</script>
+</body>
+</html>
