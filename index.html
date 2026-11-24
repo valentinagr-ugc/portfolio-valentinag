@@ -543,6 +543,12 @@ section[id]{scroll-margin-top:84px}
   .story{margin-top:10px}
 }
 
+/* ---------- Menú de celular dentro de los proyectos ---------- */
+.pburger{display:none;flex:none}
+.pmenu{width:100%;margin:8px 0 0}
+@media (max-width:760px){ .pburger{display:grid} }
+@media (min-width:761px){ .pmenu{display:none !important} }
+
 /* ---------- Bandas para separar secciones ---------- */
 .band{background:var(--bg-2);border-radius:56px;margin-inline:max(8px,1.2vw)}
 :root[data-look="light"] .job,:root[data-look="light"] .fact,:root[data-look="light"] .slide,:root[data-look="light"] .float-card,
@@ -1178,6 +1184,11 @@ function projectHTML(b){
     <button class="jump" type="button" data-jump="vpin">Videos</button>
     <button class="navbtn" type="button" id="bNext" aria-label="Marca siguiente"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg></button>
     ${themeSwitch()}
+    <button class="burger pburger" id="pBurger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="pMenu"><span></span><span></span></button>
+  </div>
+  <div class="mmenu pmenu" id="pMenu" hidden>
+    <a href="#top">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#metodo">Cómo trabajo</a><a href="#marcas">Marcas</a>
+    <a href="#posts">Posts</a><a href="#servicios">Servicios</a><a href="#contacto" class="mm-cta">Contacto</a>
   </div></div>
   <section class="p-hero" id="ptop">
     <div class="wrap p-grid">
@@ -1288,6 +1299,11 @@ function route(){
     $("#bPrev").onclick = () => location.hash = BRANDS[(i - 1 + BRANDS.length) % BRANDS.length].slug;
     $("#bNext").onclick = () => location.hash = BRANDS[(i + 1) % BRANDS.length].slug;
     $$(".pnav [data-jump]").forEach(btn => btn.onclick = () => btn.dataset.jump === "top" ? scrollTo({top:0, behavior:"smooth"}) : $("#vpin").scrollIntoView({behavior:"smooth"}));
+    { const pb = $("#pBurger"), pm = $("#pMenu");
+      const setP = o => { pm.hidden = !o; pb.setAttribute("aria-expanded", o ? "true" : "false"); pb.setAttribute("aria-label", o ? "Cerrar menú" : "Abrir menú"); };
+      pb.onclick = e => { e.stopPropagation(); setP(pm.hidden); };
+      pm.onclick = e => { if (e.target.closest("a")) setP(false); };
+      document.addEventListener("click", e => { if (!pm.hidden && !e.target.closest(".pnav")) setP(false); }); }
     { const bb = $("#bdBtn"), bm = $("#bdMenu");
       const setO = o => { bm.hidden = !o; bb.setAttribute("aria-expanded", o ? "true" : "false"); };
       bb.onclick = e => { e.stopPropagation(); setO(bm.hidden); };
