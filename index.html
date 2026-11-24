@@ -517,6 +517,32 @@ section[id]{scroll-margin-top:84px}
   .burger{width:38px;height:38px}
 }
 
+/* ---------- Ajustes: iniciales, mockups centrados, espacios ---------- */
+.pl-mono{display:none}
+@media (max-width:760px){
+  .pnav .pl-full{display:none}
+  .pnav .pl-mono{display:inline;font-size:1.5rem}
+  .pnav .plogo{padding:0 6px 0 12px}
+  .bd-btn .bd-k{display:none}
+  .bd-btn{max-width:46vw;overflow:hidden}
+  .bd-btn b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+}
+@media (max-width:600px){
+  .slide .vis{position:relative}
+  .slide .vis .phone{width:30% !important;top:10% !important}
+  .slide .vis .phone:nth-child(1){left:6% !important}
+  .slide .vis .phone:nth-child(2){left:35% !important;top:4% !important}
+  .slide .vis .phone:nth-child(3){left:64% !important}
+  .ph-stack{max-width:340px}
+  .ph-item{width:40%}
+  .ph-item .igpost{width:100% !important}
+  .ph-item:nth-child(1){left:0 !important}
+  .ph-item:nth-child(2){left:30% !important}
+  .ph-item:nth-child(3){left:60% !important}
+  .about-grid{gap:60px}
+  .story{margin-top:10px}
+}
+
 /* ---------- Bandas para separar secciones ---------- */
 .band{background:var(--bg-2);border-radius:56px;margin-inline:max(8px,1.2vw)}
 :root[data-look="light"] .job,:root[data-look="light"] .fact,:root[data-look="light"] .slide,:root[data-look="light"] .float-card,
@@ -731,9 +757,9 @@ img{max-width:100%}
       </div>
 
       <div class="skills" id="skills">
-        <span data-sy="-0.04">Redacción</span><span data-sy="-0.09">Creatividad</span><span data-sy="-0.05">Liderazgo</span>
-        <span data-sy="-0.11">Comunicación</span><span data-sy="-0.06">Trabajo en equipo</span><span data-sy="-0.1">Resolución de problemas</span>
-        <span data-sy="-0.07">Guiones</span><span data-sy="-0.12">Tendencias</span>
+        <span>Redacción</span><span>Creatividad</span><span>Liderazgo</span>
+        <span>Comunicación</span><span>Trabajo en equipo</span><span>Resolución de problemas</span>
+        <span>Guiones</span><span>Tendencias</span>
       </div>
     </div>
   </section>
@@ -1143,7 +1169,7 @@ function projectHTML(b){
     : `<div class="wrap" id="vpin"><div class="empty"><b>Vienen en camino</b><span>Los videos de ${esc(b.name)} se cargarán pronto. Mientras tanto, mira la cuenta en <a href="${b.profile}" target="_blank" rel="noopener">TikTok ↗</a></span></div></div>`;
   return `
   <div class="wrap pnav"><div class="in">
-    <a class="logo plogo" href="#marcas" aria-label="Volver al inicio">Valentina Gómez Rave</a>
+    <a class="logo plogo" href="#marcas" aria-label="Volver al inicio"><span class="pl-full">Valentina Gómez Rave</span><span class="pl-mono">VGR</span></a>
     <button class="navbtn" type="button" id="bPrev" aria-label="Marca anterior"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button>
     <div class="bdrop"><button class="bd-btn" type="button" id="bdBtn" aria-expanded="false" aria-controls="bdMenu"><span class="bd-k">Marca</span><b>${esc(b.name)}</b><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5 12 15l5.5-5.5"/></svg></button>
       <div class="bd-menu" id="bdMenu" hidden><a href="#marcas" class="bd-home">← Todas las marcas</a>${BRANDS.map(x=>`<a href="#${x.slug}" class="${x===b?"on":""}"><span>${esc(x.name)}</span><small>${esc(x.niche)}</small></a>`).join("")}</div></div>
@@ -1180,7 +1206,8 @@ function layoutRail(){
   const W = win.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
   vPer = Math.min(perView(), rail.children.length);
   const gap = innerWidth < 600 ? 18 : 36;
-  const avail = innerHeight - (innerWidth < 600 ? 250 : 240);       // alto libre para el teléfono
+  const vh0 = innerHeight, head = (document.querySelector(".vhead")?.offsetHeight || 120) + (innerWidth < 600 ? 120 : 110);
+  const avail = vh0 - head;       // alto libre para el teléfono
   const cw = Math.max(150, Math.min((W - gap*(vPer-1)) / vPer, avail * 9 / 19, 470));
   rail.style.setProperty("--cw", cw + "px"); rail.style.gap = gap + "px";
   const group = cw*vPer + gap*(vPer-1);
@@ -1255,7 +1282,7 @@ function route(){
     proj.innerHTML = projectHTML(b); proj.hidden = false; home.hidden = true;
     document.body.classList.add("in-project"); bindTheme();
     const pin0 = $("#vpin.vpin"); if (pin0) pin0.style.height = `calc(100vh + ${Math.max(Math.ceil(b.videos.length / perView()) - 1, 1) * 70}vh)`;
-    layoutRail(); watchVideos(); addParallax(proj);
+    layoutRail(); watchVideos(); addParallax(proj); setupCounters(proj);
     scrollTo({top:0, behavior:"instant"});
     const i = BRANDS.indexOf(b);
     $("#bPrev").onclick = () => location.hash = BRANDS[(i - 1 + BRANDS.length) % BRANDS.length].slug;
@@ -1288,7 +1315,7 @@ const lerp = (a,b,t) => a + (b-a)*t;
 function playOnly(list, el){ list.forEach(v => { if (v === el){ v.paused && v.play().catch(()=>{}); } else if (!v.paused) v.pause(); }); }
 function frame(){
   smx = lerp(smx, mx, .08); smy = lerp(smy, my, .08);
-  const vh = innerHeight, y = scrollY, mob = isMobile(), k = mob ? 0.85 : 1;
+  const vh = innerHeight, y = scrollY, mob = isMobile(), k = mob ? 0 : 1;
   $$("[data-sy]").forEach(el => {
     if (!el.offsetParent) return;
     const r = el.parentElement.getBoundingClientRect(), off = (r.top + r.height/2 - vh/2);
@@ -1308,7 +1335,7 @@ function frame(){
     });
     $$(".float-card").forEach(c => { const d = +c.dataset.d; c.style.transform = `translate3d(${smx*d*30}px, ${-y*d*0.18*k + smy*d*20}px, 0)`; });
     const pi = $("#pimg"), pr = pi.parentElement.getBoundingClientRect();
-    pi.style.transform = `translate3d(0, ${(pr.top - vh/2) * -0.05 - 18}px, 0)`;
+    pi.style.transform = mob ? "translate3d(0,-14px,0)" : `translate3d(0, ${(pr.top - vh/2) * -0.05 - 18}px, 0)`;
     $$(".ghost").forEach(g => { const r = g.parentElement.getBoundingClientRect(); g.style.transform = `translate3d(${(r.top - vh/2) * +g.dataset.gx}px,0,0)`; });
     // teléfono de "sobre mí"
     // método: paso activo según el centro de la pantalla
@@ -1327,9 +1354,9 @@ function frame(){
       steps.forEach((st,i) => {
         const r = st.getBoundingClientRect(), dist = (r.left + r.width/2 - cxs) / r.width, a = Math.min(Math.abs(dist), 1.5);
         if (a < bd){ bd = a; best = i; }
-        st.style.transform = `scale(${1 - a*0.07}) rotate(${dist*-2}deg)`;
+        st.style.transform = "none";
         st.style.opacity = 1 - a*0.35;
-        const m = st.querySelector(".mini"); if (m) m.style.transform = `translate3d(${-dist*40}px, ${(r.top - vh/2) * -0.05}px, 0) rotate(${dist*6}deg)`;
+        
       });
       $$("#mDots i").forEach((d,i) => d.classList.toggle("on", i === best));
       groupPlay(sc, best);
@@ -1344,14 +1371,14 @@ function frame(){
       s.style.opacity = 1 - a*0.45;
       s.querySelectorAll(".vis .phone, .vis .igpost").forEach(p => {
         const kk = +p.dataset.k;
-        p.style.transform = `translate3d(${-dist*kk*140 + smx*kk*14}px, ${(r.top - vh/2)*kk*-0.07*k + smy*kk*10}px,0) rotate(${+p.dataset.r + dist*kk*8}deg)`;
+        p.style.transform = mob ? `rotate(${p.dataset.r}deg)` : `translate3d(${-dist*kk*140 + smx*kk*14}px, ${(r.top - vh/2)*kk*-0.07*k + smy*kk*10}px,0) rotate(${+p.dataset.r + dist*kk*8}deg)`;
       });
     });
     $$("#dots i").forEach((d,i) => d.classList.toggle("on", i === best));
     slides.forEach((s,i) => groupPlay(s.querySelector(".vis"), i === best ? 1 : -1));
     const vis = tc.top < vh && tc.bottom > 0;
   } else if (curBrand){
-    $$("#pvis .phone, #pvis .igpost").forEach(p => { const d = +p.dataset.d; p.style.transform = `translate3d(${smx*d*24}px, ${-y*d*(mob ? 0.1 : 0.28) + smy*d*16}px,0) rotate(${+p.dataset.r + smx*d*3}deg)`; });
+    $$("#pvis .phone, #pvis .igpost").forEach(p => { const d = +p.dataset.d; p.style.transform = `translate3d(${smx*d*24}px, ${-y*d*(mob ? 0 : 0.28) + smy*d*16}px,0) rotate(${+p.dataset.r + smx*d*3}deg)`; });
     groupPlay($("#pvis"), 1);
     const pin = $("#vpin"), rail = $("#vrail");
     if (rail){
@@ -1365,7 +1392,7 @@ function frame(){
         const cr = c.getBoundingClientRect(), dist = (cr.left + cr.width/2 - cx) / (vStepPx || cr.width);
         const a = Math.abs(dist), out = Math.max(0, a - (vPer - 1)/2 - 0.35);   // fuera de la vista
         if (a < bd){ bd = a; best = i; }
-        c.style.transform = `translate3d(0, ${Math.sin(prog*Math.PI*2 + i*1.3)*10 + out*30}px, 0) rotate(${dist*1.6}deg)`;
+        c.style.transform = `translate3d(0, ${out*30}px, 0)`;
         c.style.opacity = 1 - Math.min(out*1.8, .92);
       });
       vIdx = best;
@@ -1449,7 +1476,6 @@ $("#copy").onclick = async e => {
 function addParallax(root){
   const set = (sel, fn) => root.querySelectorAll(sel).forEach((el,i) => { if (!el.dataset.sy && !el.dataset.sx) fn(el,i); });
   set(".sub, .about-head .lede", el => el.dataset.sy = "-0.04");
-  set(".stat", (el,i) => el.dataset.sy = String(-0.03 - (i % 4) * 0.025));
   set(".story-cols p", (el,i) => el.dataset.sy = String(-0.03 - i * 0.05));
   set(".facts-list", el => el.dataset.sy = "-0.05");
   set(".svc-list li", (el,i) => el.dataset.sx = String(i % 2 ? 0.035 : -0.035));
@@ -1459,6 +1485,26 @@ function addParallax(root){
   set(".mailrow", el => el.dataset.sy = "-0.03");
 }
 addParallax(document);
+/* cifras que cuentan hacia arriba al aparecer */
+function setupCounters(root){
+  root.querySelectorAll(".stat b").forEach(el => {
+    if (el.__counted) return; el.__counted = true;
+    const raw = el.textContent.trim(), m = raw.match(/^([\d.]+(?:,\d+)?)(.*)$/);
+    if (!m || reduce) return;
+    const num = m[1], suffix = m[2], dec = (num.split(",")[1] || "").length, thou = num.includes(".");
+    const val = parseFloat(num.replace(/\./g, "").replace(",", "."));
+    const fmt = v => { let [i, d] = v.toFixed(dec).split("."); if (thou) i = i.replace(/\B(?=(\d{3})+(?!\d))/g, "."); return i + (d ? "," + d : "") + suffix; };
+    el.textContent = fmt(0);
+    const ob = new IntersectionObserver(es => {
+      if (!es[0].isIntersecting) return; ob.disconnect();
+      setTimeout(() => { el.textContent = raw; }, 1700);
+      const t0 = performance.now(), D = 1400;
+      (function tick(t){ const p = Math.min((t - t0) / D, 1), e = 1 - Math.pow(1 - p, 3); el.textContent = p < 1 ? fmt(val * e) : raw; if (p < 1) requestAnimationFrame(tick); })(t0);
+    }, {threshold: .4});
+    ob.observe(el);
+  });
+}
+setupCounters(document);
 route(); runIntro(); watchVideos(); kick();
 </script>
 </body>
